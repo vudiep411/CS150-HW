@@ -7,7 +7,7 @@
 #include <string>
 using namespace std;
 
-string STUDENT = "WHO ARE YOU?";  // Add your Canvas login name
+string STUDENT = "vdiep8";  // Add your Canvas login name
 extern string ASSIGNMENT;
 
 /**
@@ -19,6 +19,8 @@ int run()
     // Add your implementation comments here
 
     // Write your code here
+cout << STUDENT << ":" << ASSIGNMENT << endl;
+cout << "[1, 1]" << endl;
 
     return 0;
 }
