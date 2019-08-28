@@ -1,6 +1,6 @@
 /**
- *  @author Put your name here
- *  @date Put the date here (Semester is OK)
+ *  @author Vu Diep
+ *  @date 8/27/2019
  *  @file h00.cpp
  */
 #include <iostream>
@@ -19,9 +19,21 @@ int run()
     // Add your implementation comments here
 
     // Write your code here
-cout << STUDENT << ":" << ASSIGNMENT << endl;
-cout << "[1, 1]" << endl;
+cout << STUDENT << ":" << ASSIGNMENT << " : " ;
+cout << "Cereal box calculator" << endl;
+cout << string(50 , '-') << endl;
+    //input
+cout << "enter ounces per box of cereal: "  ;
+double ouncesPerBox;
+cin >> ouncesPerBox;
 
+// processing
+const double OUNCE_PER_TON = 35273.92;
+double weightInTons = ouncesPerBox / OUNCE_PER_TON;
+double boxesPerTons = 1 / weightInTons;
+
+// output
+cout << "Weight in metric tons, boxes per tons [" << weightInTons << ", " << boxesPerTons << "]" << endl;
     return 0;
 }
 
