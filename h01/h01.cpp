@@ -35,8 +35,8 @@ int after = time + duration;
 int before = (time - duration) ;
 int afterhours = after / 60 % 12;
 int afterminutes = after % 60;
-int beforehours = (before / 60);
-int beforeminutes = (before % 60) ;
+int beforehours = (before + 1440 / 60);
+int beforeminutes = (before + 1440 % 60) ;
 
 //output
 
