@@ -1,6 +1,6 @@
 INSTRUCTOR TESTING H01--vdiep8
 ----------------------------------------------------------------------
-   X Input of 3:57 1:05 : expected [5:02, 2:52] but found [5:2, 2:52]
+   + Input of 3:57 1:05 ->5:02, 2:52
    X Input of 12:00 0:38 : expected [12:38, 11:22] but found [0:38, 11:22]
    + Input of 12:00 1:15 ->1:15, 10:45
    X Input of 5:15 7:59 : expected [1:14, 9:16] but found [1:14, -2:-44]
@@ -24,6 +24,6 @@ INSTRUCTOR TESTING H01--vdiep8
    X Input of 2:54 14:23 : expected [5:17, 12:31] but found [5:17, -11:-29]
    X Input of 3:18 15:19 : expected [6:37, 11:59] but found [6:37, -12:-1]
 ----------------------------------------------------------------------
-INSTRUCTOR TESTS H01:vdiep8: ALL TESTS -- PASS 12/23 (52%).
+INSTRUCTOR TESTS H01:vdiep8: ALL TESTS -- PASS 13/23 (57%).
 ----------------------------------------------------------------------
-MTU2NzIyMTk2NDp2ZGllcDg6SDAxOjUyLjE3JQ==
+MTU2NzI3NjAwNTp2ZGllcDg6SDAxOjU2LjUyJQ==
