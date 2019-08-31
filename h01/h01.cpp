@@ -40,8 +40,9 @@ int beforeminutes = (before % 60) ;
 
 //output
 
-cout << "[" << setfill ('0') << setw(2) << afterhours << ":" << setw (2) << afterminutes << ", ";
-cout << setfill ('0') << setw(2) << beforehours << ":" << setw (2) << beforeminutes << "]";
+cout << "[" << setfill ('0') << afterhours << ":" << setw (2) << afterminutes << ", ";
+cout << setfill ('0') << beforehours << ":" << setw (2) << beforeminutes << "]";
+
 
 
 
