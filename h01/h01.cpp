@@ -32,10 +32,10 @@ cin >> durationHours >> dis >> durationMins;
 int time = timeHours * 60 + timeMinutes;
 int duration = durationHours * 60 + durationMins;
 int after = time + duration;
-int before = (time - duration)  ;
+int before = (time - duration) + 1440  ;
 int afterhours = after / 60 % 12;
 int afterminutes = after % 60;
-int beforehours = (before  / 60);
+int beforehours = (before  / 60 % 12);
 int beforeminutes = (before % 60) ;
 
 //output
