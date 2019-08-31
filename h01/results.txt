@@ -3,10 +3,10 @@ INSTRUCTOR TESTING H01--vdiep8
    + Input of 3:57 1:05 ->5:02, 2:52
    X Input of 12:00 0:38 : expected [12:38, 11:22] but found [0:38, 11:22]
    + Input of 12:00 1:15 ->1:15, 10:45
-   X Input of 5:15 7:59 : expected [1:14, 9:16] but found [1:14, -2:-44]
+   + Input of 5:15 7:59 ->1:14, 9:16
    X Input of 12:00 0:38 : expected [12:38, 11:22] but found [0:38, 11:22]
    + Input of 12:00 1:15 ->1:15, 10:45
-   X Input of 5:15 7:59 : expected [1:14, 9:16] but found [1:14, -2:-44]
+   + Input of 5:15 7:59 ->1:14, 9:16
    + Input of 9:18 1:19 ->10:37, 7:59
    + Input of 9:42 2:15 ->11:57, 7:27
    + Input of 10:06 3:11 ->1:17, 6:55
@@ -17,13 +17,13 @@ INSTRUCTOR TESTING H01--vdiep8
    + Input of 12:06 7:51 ->7:57, 4:15
    + Input of 12:30 8:47 ->9:17, 3:43
    + Input of 12:54 9:43 ->10:37, 3:11
-   X Input of 1:18 10:39 : expected [11:57, 2:39] but found [11:57, -9:-21]
-   X Input of 1:42 11:35 : expected [1:17, 2:07] but found [1:17, -9:-53]
-   X Input of 2:06 12:31 : expected [2:37, 1:35] but found [2:37, -10:-25]
-   X Input of 2:30 13:27 : expected [3:57, 1:03] but found [3:57, -10:-57]
-   X Input of 2:54 14:23 : expected [5:17, 12:31] but found [5:17, -11:-29]
-   X Input of 3:18 15:19 : expected [6:37, 11:59] but found [6:37, -12:-1]
+   + Input of 1:18 10:39 ->11:57, 2:39
+   + Input of 1:42 11:35 ->1:17, 2:07
+   + Input of 2:06 12:31 ->2:37, 1:35
+   + Input of 2:30 13:27 ->3:57, 1:03
+   X Input of 2:54 14:23 : expected [5:17, 12:31] but found [5:17, 0:31]
+   + Input of 3:18 15:19 ->6:37, 11:59
 ----------------------------------------------------------------------
-INSTRUCTOR TESTS H01:vdiep8: ALL TESTS -- PASS 13/23 (57%).
+INSTRUCTOR TESTS H01:vdiep8: ALL TESTS -- PASS 20/23 (87%).
 ----------------------------------------------------------------------
-MTU2NzI3NjAwNTp2ZGllcDg6SDAxOjU2LjUyJQ==
+MTU2NzI3Nzc1OTp2ZGllcDg6SDAxOjg2Ljk2JQ==
