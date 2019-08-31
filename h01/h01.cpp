@@ -40,10 +40,9 @@ int beforeminutes = before % 60;
 
 //output
 cout << endl;
-cout << durationHours << ":" << durationMins << " hours after, and before, " << timeHours << ":" << timeMinutes << " is [" << afterhours << ":" << afterminutes << ", " << beforehours << ":" << beforeminutes << "]" << endl;
 cout << setfill('0');
 cout << setw(2) << after / 60 << ":" << setw(2) << after % 60  ;
-
+cout << durationHours << ":" << durationMins << " hours after, and before, " << timeHours << ":" << timeMinutes << " is [" << afterhours << ":" << afterminutes << ", " << beforehours << ":" << beforeminutes << "]" << endl;
 
 
 
