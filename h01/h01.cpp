@@ -28,20 +28,21 @@ cin >> timeHours >> dis >> timeMinutes;
 cout << "     Duration: ";
 cin >> durationHours >> dis >> durationMins;
 //processing
-int time =  timeHours * 60 + timeMinutes;
-int durAfter = durationHours * 60 + durationMins;
 
-int sumHours, sumMinutes, diffHours , diffMinutes;
+int time = timeHours * 60 + timeMinutes;
+int duration = durationHours * 60 + durationMins;
+int after = time + duration;
+int before = time - duration;
+int afterhours = after / 60;
+int afterminutes = after % 60;
+int beforehours = before / 60;
+int beforeminutes = before % 60;
 
-sumHours = (time + durationHours) / 60;
-sumMinutes = (time + durationMins) % 60;
-diffHours = (time - durationHours) / 60;
-diffMinutes = (time - durationHours) % 60;
 //output
 cout << endl;
 cout << setfill('0');
-cout << setw(2) << (time + durationHours) / 60 << ":" << setw(2) << (time + durationMins) % 60 ;
-cout << durationHours << ":" << durationMins << " hours after, and before, " << timeHours << ":" << timeMinutes << " is [" << sumHours << ":" << sumMinutes << ", " << diffHours << ":" << diffMinutes << "]" << endl;
+cout << setw(2) << after / 60 << ":" << setw(2) << after % 60  ;
+cout << durationHours << ":" << durationMins << " hours after, and before, " << timeHours << ":" << timeMinutes << " is [" << afterhours << ":" << afterminutes << ", " << beforehours << ":" << beforeminutes << "]" << endl;
 
 
 
