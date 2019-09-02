@@ -1,6 +1,6 @@
 /**
- *  @author Put your name here
- *  @date Put the date here
+ *  @author Vu Diep
+ *  @date TTEV
  *  @file h02.cpp
  */
 #include <iostream>
@@ -9,7 +9,7 @@
 
 using namespace std;
 
-string STUDENT = "Who Are You?";  // Add your Canvas login name
+string STUDENT = "vdiep8";  // Add your Canvas login name
 extern string ASSIGNMENT;
 
 /**
