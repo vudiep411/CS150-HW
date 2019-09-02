@@ -20,7 +20,7 @@ int run()
 {
 //input
 int amountNeeded , mouseWeight , weightDesire , lethalDose ;
-double cans;
+int cans;
 const int POUND_TO_GRAM = 454;
 const double PERCENTAGE_IN_GRAM = 7 / 2 ;
 cin >> mouseWeight ;
