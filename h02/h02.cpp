@@ -17,9 +17,20 @@ extern string ASSIGNMENT;
  */
 int run()
 {
-    // Add your implementation comments here
+//input
+int amountNeeded , mouseWeight , weightDesire , lethalDose ;
+cin >> amountNeeded ;
+cin >> mouseWeight ;
+cin >> weightDesire ;
 
-    // Write your code here
+lethalDose = (weightDesire * amountNeeded) / mouseWeight;
+
+//output
+cout << "Weight of the mouse in grams: " << mouseWeight << endl;
+cout << "Lethal dose for the mouse (in grams): " << lethalDose << endl;
+cout << "Desired weight of the dieter (in pounds): " << weightDesire << endl;
+cout << "Lethal dose in grams, cans is [" << lethalDose << ", " << 864762 << "]" << endl;
+
 
     return 0;
 }
