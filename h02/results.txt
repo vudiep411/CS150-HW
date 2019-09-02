@@ -1,16 +1,16 @@
 INSTRUCTOR TESTING H02--Who Are You?
 ----------------------------------------------------------------------
-   X Input of 15 100 100: expected [302667, 864762] but found [302666, 864759]
-   X Input of 45400 100 100: expected [100, 286] but found [100, 285]
-   X Input of 1 1000 275: expected [124850000, 356714286] but found [124850000, 356714285]
-   X Input of 20 250 350: expected [1986250, 5675000] but found [1986250, 5674999]
-   X Input of 30 285 295: expected [1272335, 3635243] but found [1272335, 3635242]
+   + Input of 15 100 100->302667, 864762
+   + Input of 45400 100 100->100, 286
+   + Input of 1 1000 275->124850000, 356714286
+   + Input of 20 250 350->1986250, 5675000
+   + Input of 30 285 295->1272335, 3635243
    + Input of 40 320 240->871680, 2490514
    + Input of 50 355 185->596329, 1703797
-   X Input of 60 390 130: expected [383630, 1096086] but found [383630, 1096085]
-   X Input of 70 425 75: expected [206732, 590663] but found [206732, 590662]
+   + Input of 60 390 130->383630, 1096086
+   + Input of 70 425 75->206732, 590663
    + Input of 80 460 20->52210, 149171
 ----------------------------------------------------------------------
-INSTRUCTOR TESTS H02:Who Are You?: ALL TESTS -- PASS 3/10 (30%).
+INSTRUCTOR TESTS H02:Who Are You?: ALL TESTS -- PASS 10/10 (100%).
 ----------------------------------------------------------------------
-MTU2NzQ1MTU3MTpXaG8gQXJlIFlvdT86SDAyOjMwLjAwJQ==
+MTU2NzQ1MjMzODpXaG8gQXJlIFlvdT86SDAyOjEwMC4wMCU=
