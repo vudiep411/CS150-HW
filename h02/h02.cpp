@@ -24,8 +24,8 @@ cin >> amountNeeded ;
 cin >> mouseWeight ;
 cin >> weightDesire ;
 weightDesire = weightDesire * POUND_TO_GRAM ;
-lethalDose = (weightDesire * amountNeeded) / mouseWeight;
-
+lethalDose = (weightDesire * amountNeeded);
+lethalDose = lethalDose / mouseWeight;
 //output
 cout << "Weight of the mouse in grams: " << mouseWeight << endl;
 cout << "Lethal dose for the mouse (in grams): " << lethalDose << endl;
