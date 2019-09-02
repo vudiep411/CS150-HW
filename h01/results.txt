@@ -1,10 +1,10 @@
 INSTRUCTOR TESTING H01--vdiep8
 ----------------------------------------------------------------------
    + Input of 3:57 1:05 ->5:02, 2:52
-   X Input of 12:00 0:38 : expected [12:38, 11:22] but found [0:38, 11:22]
+   + Input of 12:00 0:38 ->12:38, 11:22
    + Input of 12:00 1:15 ->1:15, 10:45
    + Input of 5:15 7:59 ->1:14, 9:16
-   X Input of 12:00 0:38 : expected [12:38, 11:22] but found [0:38, 11:22]
+   + Input of 12:00 0:38 ->12:38, 11:22
    + Input of 12:00 1:15 ->1:15, 10:45
    + Input of 5:15 7:59 ->1:14, 9:16
    + Input of 9:18 1:19 ->10:37, 7:59
@@ -21,9 +21,9 @@ INSTRUCTOR TESTING H01--vdiep8
    + Input of 1:42 11:35 ->1:17, 2:07
    + Input of 2:06 12:31 ->2:37, 1:35
    + Input of 2:30 13:27 ->3:57, 1:03
-   X Input of 2:54 14:23 : expected [5:17, 12:31] but found [5:17, 0:31]
+   + Input of 2:54 14:23 ->5:17, 12:31
    + Input of 3:18 15:19 ->6:37, 11:59
 ----------------------------------------------------------------------
-INSTRUCTOR TESTS H01:vdiep8: ALL TESTS -- PASS 20/23 (87%).
+INSTRUCTOR TESTS H01:vdiep8: ALL TESTS -- PASS 23/23 (100%).
 ----------------------------------------------------------------------
-MTU2NzI3Nzc1OTp2ZGllcDg6SDAxOjg2Ljk2JQ==
+MTU2NzQ1MTg1Mjp2ZGllcDg6SDAxOjEwMC4wMCU=
