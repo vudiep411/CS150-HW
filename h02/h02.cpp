@@ -19,9 +19,9 @@ extern string ASSIGNMENT;
 int run()
 {
 //input
-int amountNeeded , mouseWeight , weightDesire , lethalDose ;
-int cans;
-const int POUND_TO_GRAM = 454;
+double amountNeeded , mouseWeight , weightDesire , lethalDose ;
+double cans;
+const double POUND_TO_GRAM = 454;
 const double PERCENTAGE_IN_GRAM = 0.001 * 350 ;
 cin >> mouseWeight ;
 cin >> amountNeeded ;
@@ -30,10 +30,11 @@ weightDesire = weightDesire * POUND_TO_GRAM ;
 lethalDose = (weightDesire * amountNeeded) / mouseWeight;
 cans = lethalDose / PERCENTAGE_IN_GRAM ;
 //output
+cout << setprecision(0);
 cout << "Weight of the mouse in grams: " << mouseWeight << endl;
 cout << "Lethal dose for the mouse (in grams): " << lethalDose << endl;
 cout << "Desired weight of the dieter (in pounds): " << weightDesire << endl;
-cout << "Lethal dose in grams, cans is [" << setprecision(0) << lethalDose << ", " << cans << "]" << endl;
+cout << "Lethal dose in grams, cans is ["  << lethalDose << ", " << cans << "]" << endl;
 
 
     return 0;
