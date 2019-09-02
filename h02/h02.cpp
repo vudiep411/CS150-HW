@@ -22,7 +22,7 @@ int run()
 int amountNeeded , mouseWeight , weightDesire , lethalDose ;
 int cans;
 const int POUND_TO_GRAM = 454;
-const double PERCENTAGE_IN_GRAM = 7 / 2 ;
+const double PERCENTAGE_IN_GRAM = 7 / 20 ;
 cin >> mouseWeight ;
 cin >> amountNeeded ;
 cin >> weightDesire ;
