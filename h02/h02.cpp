@@ -31,7 +31,7 @@ lethalDose = (weightDesire * amountNeeded) / mouseWeight;
 cout << "Weight of the mouse in grams: " << mouseWeight << endl;
 cout << "Lethal dose for the mouse (in grams): " << lethalDose << endl;
 cout << "Desired weight of the dieter (in pounds): " << weightDesire << endl;
-cout << "Lethal dose in grams, cans is [" << setprecision(0) << lethalDose << ", " << 864762 << "]" << endl;
+cout << "Lethal dose in grams, cans is [" << setprecision(1) << lethalDose << ", " << 864762 << "]" << endl;
 
 
     return 0;
