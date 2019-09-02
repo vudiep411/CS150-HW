@@ -30,7 +30,7 @@ weightDesire = weightDesire * POUND_TO_GRAM ;
 lethalDose = (weightDesire * amountNeeded) / mouseWeight;
 cans = lethalDose / PERCENTAGE_IN_GRAM ;
 //output
-cout << setprecision(0);
+cout << fixed << setprecision(0);
 cout << "Weight of the mouse in grams: " << mouseWeight << endl;
 cout << "Lethal dose for the mouse (in grams): " << lethalDose << endl;
 cout << "Desired weight of the dieter (in pounds): " << weightDesire << endl;
