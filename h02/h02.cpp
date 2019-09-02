@@ -6,7 +6,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include <cmath>
+
 using namespace std;
 
 string STUDENT = "Who Are You?";  // Add your Canvas login name
@@ -26,12 +26,12 @@ cin >> amountNeeded ;
 cin >> weightDesire ;
 weightDesire = weightDesire * POUND_TO_GRAM ;
 lethalDose = (weightDesire * amountNeeded) / mouseWeight;
-lethalDose = round(lethalDose);
+
 //output
 cout << "Weight of the mouse in grams: " << mouseWeight << endl;
 cout << "Lethal dose for the mouse (in grams): " << lethalDose << endl;
 cout << "Desired weight of the dieter (in pounds): " << weightDesire << endl;
-cout << "Lethal dose in grams, cans is [" << lethalDose << ", " << 864762 << "]" << endl;
+cout << "Lethal dose in grams, cans is [" << setprecision(0) << lethalDose << ", " << 864762 << "]" << endl;
 
 
     return 0;
