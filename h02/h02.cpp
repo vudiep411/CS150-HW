@@ -19,7 +19,7 @@ extern string ASSIGNMENT;
 int run()
 {
 //input
-double amountNeeded , mouseWeight , weightDesire , lethalDose ;
+long amountNeeded , mouseWeight , weightDesire , lethalDose ;
 const int POUND_TO_GRAM = 454;
 
 cin >> mouseWeight ;
