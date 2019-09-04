@@ -88,6 +88,10 @@ else if (grade.compare("F") == 0)
 {
     gradeValue = 0.0;
 }
+else
+{
+    cout << "ERROR" << endl;
+}
 //output
 cout << "Grade value is [" << gradeValue << "]";
 
