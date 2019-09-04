@@ -1,0 +1,19 @@
+INSTRUCTOR TESTING H03--vdiep8
+----------------------------------------------------------------------
+   X Input of Z: found [0.0]. Incorrect.
+   X Input of F-: found [0.0]. Incorrect.
+   X Input of A+: found [0.0]. Incorrect.
+   + Input of A->4.0
+   + Input of A-->3.7
+   + Input of B-->2.7
+   + Input of C+->2.3
+   + Input of C-->1.7
+   + Input of D+->1.3
+   + Input of D->1.0
+   + Input of D-->0.7
+   X Input of Abcdefg: found [0.0]. Incorrect.
+   X Input of D?: found [0.0]. Incorrect.
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H03:vdiep8: ALL TESTS -- PASS 8/13 (62%).
+----------------------------------------------------------------------
+MTU2NzYyNTIyMzp2ZGllcDg6SDAzOjYxLjU0JQ==
