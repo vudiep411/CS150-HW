@@ -93,6 +93,7 @@ else
     cout << "ERROR" << endl;
 }
 //output
+cout << fixed << setprecision(1);
 cout << "Grade value is [" << gradeValue << "]";
 
 
