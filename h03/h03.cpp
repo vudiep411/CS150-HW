@@ -25,12 +25,7 @@ int run()
 
 //processing
 
-if (grade.compare("A+") == 0)
-{
-    gradeValue = 4.3;
-}
-
-else if (grade.compare("A") == 0)
+if (grade.compare("A") == 0)
 {
     gradeValue = 4.0;
 }
@@ -90,7 +85,7 @@ else if (grade.compare("F") == 0)
 }
 else
 {
-    cout << "ERROR" << endl;
+    cout << "INVALID LETTER GRADE" << endl;
 }
 //output
 cout << fixed << setprecision(1);
