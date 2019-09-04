@@ -8,7 +8,7 @@
 #include <string>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 extern string ASSIGNMENT;
 
 // Add your function declaration here
@@ -39,3 +39,28 @@ int run()
 }
 
 // Implement your function here
+string getStatus(double gpa , int credits , int honorsCredits )
+{
+	if( gpa < 2.0 || credits < 180)
+	{
+		return "not graduating";
+	}
+	else if(gpa >= 2.0 && gpa < 3.6)
+	{
+		return "graduating";
+	}
+	else if( gpa >= 3.6 && gpa <= 3.8 && honorsCredits < 15)
+	{
+		return "cum laude";
+	}
+	else if (gpa >= 3.8 || (gpa >= 3.6 && gpa <= 3.8 && honorsCredits > 15) )
+	{
+	    return "magna cum laude";
+	}
+    else if (gpa >= 3.8 && honorsCredits > 15)
+    {
+    	return "summa cum laude";
+    }
+       return "" ;
+
+}
