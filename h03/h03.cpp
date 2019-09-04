@@ -1,6 +1,6 @@
 /**
- *  @author Put your name here
- *  @date Put the date here
+ *  @author Vu Diep
+ *  @date TTHEV
  *  @file h03.cpp
  */
 #include <iostream>
@@ -8,7 +8,7 @@
 #include <iomanip>
 using namespace std;
 
-string STUDENT = "Who Are You?";  // Add your Canvas login name
+string STUDENT = "vdiep8";  // Add your Canvas login name
 extern string ASSIGNMENT;
 
 /**
@@ -17,9 +17,86 @@ extern string ASSIGNMENT;
  */
 int run()
 {
-    // Add your implementation comments here
+ //input
+ string grade;
+ double gradeValue;
+ cout << "Enter your letter grade: " ;
+ getline(cin , grade);
 
-    // Write your code here
+//processing
+
+if (grade.compare("A+") == 0)
+{
+    gradeValue = 4.3;
+}
+
+else if (grade.compare("A") == 0)
+{
+    gradeValue = 4.0;
+}
+
+else if (grade.compare("A-") == 0)
+{
+    gradeValue = 3.7;
+}
+
+else if (grade.compare("B+") == 0)
+{
+    gradeValue = 3.3;
+}
+
+else if (grade.compare("B") == 0)
+{
+    gradeValue = 3.0;
+}
+
+else if (grade.compare("B-") == 0)
+{
+    gradeValue = 2.7;
+}
+else if (grade.compare("C+") == 0)
+{
+    gradeValue = 2.3;
+}
+
+else if (grade.compare("C") == 0)
+{
+    gradeValue = 2.0;
+}
+
+else if (grade.compare("C-") == 0)
+{
+    gradeValue = 1.7;
+}
+
+else if (grade.compare("D+") == 0)
+{
+    gradeValue = 1.3;
+}
+
+else if (grade.compare("D") == 0)
+{
+    gradeValue = 1.0;
+}
+
+else if (grade.compare("D-") == 0)
+{
+    gradeValue = 0.7;
+}
+
+else if (grade.compare("F") == 0)
+{
+    gradeValue = 0.0;
+}
+//output
+cout << "Grade value is [" << gradeValue << "]";
+
+
+
+
+
+
+
 
     return 0;
 }
