@@ -13,7 +13,13 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 
 // Place the implementation (definition) of your function here
 
+double focalLength(double, double, double, double)
+{
+    int result = 0;
+    return result;
 
+
+}
 
 
 /////////////// Optional Student Code /////////////////
