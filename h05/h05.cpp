@@ -15,10 +15,10 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 
 double focalLength(double d, double r1, double r2, double n)
 {
-    int f = (1 / r1) + (1 / r2);
-    int a = ((n - 1) * d) / (n * r1 * r2);
-    f = (n - 1) * (f + a);
-    f = 1 / f;
+    double f = (1.0 / r1) + (1.0/ r2);
+    double a = ((n - 1.0) * d) / (n * r1 * r2);
+    f = (n - 1.0) * (f + a);
+    f = 1.0 / f;
     return f;
 
 
