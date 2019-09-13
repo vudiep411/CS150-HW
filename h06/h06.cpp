@@ -13,27 +13,27 @@ string STUDENT = "vdiep8";  // Add your Canvas login name
 // Implement your function here
 string toFrenchGender(const string& country)
 {
-    string prefix;
+
     string island = "iles";
     auto len = country.size() - 1;
     string result;
     string last = country.substr(country.size() - 2);
 
-   /* if(country.substr(0 , 4).compare(island) == 0 || (last == "es" || "is" || "os" || "as") )
+    if(country.substr(0 , 4).compare(island) == 0 || (last == "es" || "is" || "os" || "as") )
     {
-        prefix = "les ";
-        result = prefix + country;
+
+        result = "les " + country;
     }
-    */
+
      if(country.at(len) == 'e' || 'o')
     {
-        prefix = "la ";
-        result = prefix + country;
+
+        result = "la " + country;
     }
     else
     {
-        prefix = "le ";
-        result = prefix + country;
+
+        result = "le " + country;
     }
 
     return result;
