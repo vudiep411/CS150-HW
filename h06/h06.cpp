@@ -25,7 +25,7 @@ string toFrenchGender(const string& country)
         result = "les " + country;
     }
 
-     if(country.at(len) == 'e' || 'o')
+    else if(country.at(len) == 'e' || 'o')
     {
 
         result = "la " + country;
