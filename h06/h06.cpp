@@ -19,13 +19,13 @@ string toFrenchGender(const string& country)
     string result;
     string last = country.substr(country.size() - 2);
 
-    if(country.substr(0 , 4).compare(island) == 0 || (last == "es" || "is" || "os" || "as") )
+    if(country.substr(0 , 4).compare(island) == 0 || (last == "es" ||last == "is" || last == "os" || last == "as") )
     {
 
         result = "les " + country;
     }
 
-    else if(country.at(len) == 'e' || 'o')
+    else if(country[len] == 'e' || country[len] == 'o')
     {
 
         result = "la " + country;
