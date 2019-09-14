@@ -13,7 +13,7 @@ string STUDENT = "vdiep8";  // Add your Canvas login name
 // Implement your function here
 string toFrenchGender(const string& country)
 {
-    string plain = "Israel,Madagascar,Sri Lanka,Singapore,Monaco,Cuba,Cyprus.";
+    string plain = "Israel , Madagascar , Sri Lanka , Singapore , Monaco , Cuba , Cyprus";
     string mas = "Belize , Cambodge , Honduras , Mexique , Mozambique , Costa Rica , Zimbabwe";
    // size_t masculine = mas.find(country);
    // size_t p = plain.find(country);
