@@ -31,7 +31,7 @@ string toFrenchGender(const string& country)
     {
         result = "el " + country;
     }
-    else if(vowels.find(country[0]))
+    else if(!vowels.find(country[0]))
     {
         result = "l'" + country;
     }
