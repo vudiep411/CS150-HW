@@ -24,7 +24,7 @@ string toFrenchGender(const string& country)
         result = "l'" + country;
     }
 
-    if(country.substr(0 , 4).compare(island) == 0 || (last == "es" ||last == "is" || last == "os" || last == "as") )
+    else if(country.substr(0 , 4).compare(island) == 0 || (last == "es" ||last == "is" || last == "os" || last == "as") )
     {
 
         result = "les " + country;
