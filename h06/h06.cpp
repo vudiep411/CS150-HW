@@ -31,7 +31,7 @@ string toFrenchGender(const string& country)
     {
         result = "el " + country;
     }
-    else if(!first)
+    else if(first)
     {
         result = "l'" + country;
     }
