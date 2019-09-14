@@ -19,7 +19,7 @@ string toFrenchGender(const string& country)
     auto len = country.size() - 1;
     string result;
     string last = country.substr(country.size() - 2);
-    if(first)
+    if(!first)
     {
         result = "l'" + country;
     }
