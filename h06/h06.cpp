@@ -18,7 +18,7 @@ string toFrenchGender(const string& country)
     int masculine = mas.find(country);
     int p = plain.find(country);
     string vowels = "AEIOU";
-   // auto first = vowels.find(country[0]);
+    int first = vowels.find(country[0]);
     string island = "iles";
     auto len = country.size() - 1;
     string result;
@@ -31,7 +31,7 @@ string toFrenchGender(const string& country)
     {
         result = "el " + country;
     }
-    else if(vowels.find(country[0]) <= 0)
+    else if(first < 0)
     {
         result = "l'" + country;
     }
