@@ -23,11 +23,11 @@ string toFrenchGender(const string& country)
     auto len = country.size() - 1;
     string result;
     string last = country.substr(country.size() - 2);
-    if(plain.find(country))
+    if(!plain.find(country))
     {
         result = country;
     }
-    else if(mas.find(country))
+    else if(!mas.find(country))
     {
         result = "el " + country;
     }
