@@ -15,23 +15,23 @@ string toFrenchGender(const string& country)
 {
     string plain = "Israel , Madagascar , Sri Lanka , Singapore , Monaco , Cuba , Cyprus";
     string mas = "Belize , Cambodge , Honduras , Mexique , Mozambique , Costa Rica , Zimbabwe";
-   // size_t masculine = mas.find(country);
-   // size_t p = plain.find(country);
+    int masculine = mas.find(country);
+    int p = plain.find(country);
     string vowels = "AEIOU";
    // auto first = vowels.find(country[0]);
     string island = "iles";
     auto len = country.size() - 1;
     string result;
     string last = country.substr(country.size() - 2);
-    if(!plain.find(country))
+    if(p >= 0)
     {
         result = country;
     }
-    else if(!mas.find(country))
+    else if(masculine >= 0)
     {
         result = "el " + country;
     }
-    else if(!vowels.find(country[0]))
+    else if(vowels.find(country[0]) <= 0)
     {
         result = "l'" + country;
     }
