@@ -31,17 +31,15 @@ string toFrenchGender(const string& country)
     {
         result = "el " + country;
     }
-    else if(country[0] == 'A' || country[0] == 'E' || country[0] == 'I' || country[0] == 'O' || country[0] == 'U' )
-    {
-        result = "l'" + country;
-    }
-
-    else if(country.substr(0 , 4).compare(island) == 0 || (last == "es" ||last == "is" || last == "os" || last == "as") )
+      else if(country.substr(0 , 4).compare(island) == 0 || (last == "es" ||last == "is" || last == "os" || last == "as") )
     {
 
         result = "les " + country;
     }
-
+    else if(country[0] == 'A' || country[0] == 'E' || country[0] == 'I' || country[0] == 'O' || country[0] == 'U' )
+    {
+        result = "l'" + country;
+    }
     else if(country[len] == 'e' || country[len] == 'o')
     {
 
