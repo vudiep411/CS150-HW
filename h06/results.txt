@@ -1,0 +1,25 @@
+TESTING H06--vdiep8
+----------------------------------------------------------------------
+Checking function: toFrenchGender("country") -------------------
+   + toFrenchGender("Israel")->Israel
+   + toFrenchGender("iles Malouines")->les iles Malouines
+   + toFrenchGender("Pays-Bas")->les Pays-Bas
+   + toFrenchGender("Ecosse")->l'Ecosse
+   X toFrenchGender("Costa Rica"): expected [le Costa Rica] but found [el Costa Rica]
+   + toFrenchGender("iles Galapagos")->les iles Galapagos
+   X toFrenchGender("Honduras"): expected [le Honduras] but found [el Honduras]
+   + toFrenchGender("Perou")->le Perou
+   + toFrenchGender("Republique dominicaine")->la Republique dominicaine
+   + toFrenchGender("iles Salomon")->les iles Salomon
+   + toFrenchGender("Suede")->la Suede
+   + toFrenchGender("Bulgarie")->la Bulgarie
+   + toFrenchGender("Argentine")->l'Argentine
+   + toFrenchGender("Cyprus")->Cyprus
+   + toFrenchGender("Surinam")->le Surinam
+----------------------------------------------------------------------
+  Tests passing 13/15 (87%).
+
+----------------------------------------------------------------------
+H06:vdiep8:ALL TESTS -- PASS 13/15 (87%).
+----------------------------------------------------------------------
+MTU2ODU5MzM0Mjp2ZGllcDg6SDA2Ojg2LjY3JQ==
