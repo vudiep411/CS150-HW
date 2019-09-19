@@ -28,11 +28,10 @@ int sumNums(const string& s)
         sum += num;
         num = 0;
     }
-
-
     }
+    sum += num;
+return sum;
 
- return sum;
 
 }
 
