@@ -1,0 +1,26 @@
+TESTING H07--vdiep8
+----------------------------------------------------------------------
+Checking function: sumNums("str") -------------------
+   + sumNums("t5k2z2nov0i6")->15
+   + sumNums("mjw69g9j3uxh")->81
+   + sumNums("we69a9es6l449")->533
+   + sumNums("t93f2v8c721")->824
+   + sumNums("ln5g9")->14
+   + sumNums("8c")->8
+   + sumNums("h3pn6f291fh5l7v9i2i")->323
+   + sumNums("dhvj7y365ut85019")->85391
+   + sumNums("04e68y2h02dx5h")->81
+   + sumNums("k05485o27672o")->33157
+   + sumNums("9wz1d73277r8047")->81334
+   + sumNums("abc123xyz")->123
+   + sumNums("6227326n73g2")->6227401
+   + sumNums("g")->0
+   + sumNums("a1234bb11")->1245
+   + sumNums("r11v57d12x")->80
+----------------------------------------------------------------------
+  Tests passing 16/16 (100%).
+
+----------------------------------------------------------------------
+H07:vdiep8:ALL TESTS -- PASS 16/16 (100%).
+----------------------------------------------------------------------
+MTU2ODg3MDYwODp2ZGllcDg6SDA3OjEwMC4wMCU=
