@@ -12,20 +12,20 @@ Checking function: everyNth -------------------
   Tests passing 7/7 (100%).
 
 Checking function: zipZap -------------------
-   X zipZap("zipXzap"): expected [zpXzp] but found [zpizp]
+   + zipZap("zipXzap")->zpXzp
    + zipZap("zopzop")->zpzp
    + zipZap("zzzopzop")->zzzpzp
-   X zipZap("zibzap"): expected [zibzp] but found [iiizp]
+   + zipZap("zibzap")->zibzp
    + zipZap("zip")->zp
    + zipZap("zi")->zi
    + zipZap("z")->z
    + zipZap("")->
    + zipZap("zzp")->zp
-   X zipZap("abcppp"): expected [abcppp] but found [bbbb]
-   X zipZap("azbcppp"): expected [azbcppp] but found [zzzzz]
-   X zipZap("azbcpzpp"): expected [azbcpzp] but found [zzzzzzp]
+   X zipZap("abcppp"): expected [abcppp] but found [abcp]
+   X zipZap("azbcppp"): expected [azbcppp] but found [azbcp]
+   + zipZap("azbcpzpp")->azbcpzp
 ----------------------------------------------------------------------
-  Tests passing 7/12 (58%).
+  Tests passing 10/12 (83%).
 
 Checking function: countCode -------------------
    + countCode("aaacodebbb")->1
@@ -62,6 +62,6 @@ Checking function: prefixAgain -------------------
   Tests passing 7/12 (58%).
 
 ----------------------------------------------------------------------
-H08:vdiep8:ALL TESTS -- PASS 35/45 (78%).
+H08:vdiep8:ALL TESTS -- PASS 38/45 (84%).
 ----------------------------------------------------------------------
-MTU2OTAxOTYyODp2ZGllcDg6SDA4Ojc3Ljc4JQ==
+MTU2OTAyMDg3NTp2ZGllcDg6SDA4Ojg0LjQ0JQ==
