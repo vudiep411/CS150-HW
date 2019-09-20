@@ -66,7 +66,8 @@ std::string zipZap(const std::string & s)
             i++;
         }
     }
-    return result;
+
+    return result + s.substr(len - 2 , 2);
 
 }
 
