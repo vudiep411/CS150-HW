@@ -68,7 +68,7 @@ std::string zipZap(const std::string & s)
         }
     }
 
-    return result;
+    return result + s[i];
 
 }
 
