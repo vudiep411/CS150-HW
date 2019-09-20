@@ -72,6 +72,6 @@ std::string zipZap(const std::string & s)
 
 bool prefixAgain(const string & s , int n)
 {
- // return s.substr(1).find(s.substr(0, n)) != string::npos;
+
 return false;
 }
