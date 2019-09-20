@@ -70,8 +70,16 @@ std::string zipZap(const std::string & s)
 
 }
 
-bool prefixAgain(const string & s , int n)
+bool prefixAgain(const string & str , int n)
 {
+ string prefix = str.substr(0, n);
+    int length = str.size();
 
-return false;
+    for (int i = n; i <= length - n; i++) {
+        if (prefix == str.substr(i, i + n) ) {
+            return true;
+        }
+    }
+    return false;
+
 }
