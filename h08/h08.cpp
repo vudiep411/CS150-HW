@@ -67,7 +67,7 @@ std::string zipZap(const std::string & s)
         }
     }
 
-    return result += zip;
+    return result;
 
 }
 
