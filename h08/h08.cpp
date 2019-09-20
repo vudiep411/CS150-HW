@@ -52,9 +52,9 @@ std::string zipZap(const std::string & s)
     int i = 0;
     string result;
     if(len < 3) return s;
+    string zip = s.substr(i , 3);
     while(i < len - 2)
     {
-        string zip = s.substr(i , 3);
         if(zip.at(0) == 'z' && zip.at(2) == 'p')
         {
             result += "zp";
@@ -67,7 +67,7 @@ std::string zipZap(const std::string & s)
         }
     }
 
-    return result + s.substr(len - 2 , 2);
+    return result += zip;
 
 }
 
