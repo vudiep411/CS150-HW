@@ -21,11 +21,11 @@ Checking function: zipZap -------------------
    + zipZap("z")->z
    + zipZap("")->
    + zipZap("zzp")->zp
-   X zipZap("abcppp"): expected [abcppp] but found [abcp]
-   X zipZap("azbcppp"): expected [azbcppp] but found [azbcp]
+   + zipZap("abcppp")->abcppp
+   + zipZap("azbcppp")->azbcppp
    + zipZap("azbcpzpp")->azbcpzp
 ----------------------------------------------------------------------
-  Tests passing 10/12 (83%).
+  Tests passing 12/12 (100%).
 
 Checking function: countCode -------------------
    + countCode("aaacodebbb")->1
@@ -62,6 +62,6 @@ Checking function: prefixAgain -------------------
   Tests passing 7/12 (58%).
 
 ----------------------------------------------------------------------
-H08:vdiep8:ALL TESTS -- PASS 38/45 (84%).
+H08:vdiep8:ALL TESTS -- PASS 40/45 (89%).
 ----------------------------------------------------------------------
-MTU2OTAyMDg3NTp2ZGllcDg6SDA4Ojg0LjQ0JQ==
+MTU2OTAyMTA4Nzp2ZGllcDg6SDA4Ojg4Ljg5JQ==
