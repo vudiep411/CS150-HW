@@ -1,0 +1,67 @@
+TESTING H08--vdiep8
+----------------------------------------------------------------------
+Checking function: everyNth -------------------
+   + everyNth("Miracle", 2)->Mrce
+   + everyNth("abcdefg", 3)->adg
+   + everyNth("abcdefg", 2)->aceg
+   + everyNth("Chocolate", 3)->Cca
+   + everyNth("Chocolates", 3)->Ccas
+   + everyNth("Chocolates", 4)->Coe
+   + everyNth("Chocolates", 100)->C
+----------------------------------------------------------------------
+  Tests passing 7/7 (100%).
+
+Checking function: zipZap -------------------
+   X zipZap("zipXzap"): expected [zpXzp] but found [zpizp]
+   + zipZap("zopzop")->zpzp
+   + zipZap("zzzopzop")->zzzpzp
+   X zipZap("zibzap"): expected [zibzp] but found [iiizp]
+   + zipZap("zip")->zp
+   + zipZap("zi")->zi
+   + zipZap("z")->z
+   + zipZap("")->
+   + zipZap("zzp")->zp
+   X zipZap("abcppp"): expected [abcppp] but found [bbbb]
+   X zipZap("azbcppp"): expected [azbcppp] but found [zzzzz]
+   X zipZap("azbcpzpp"): expected [azbcpzp] but found [zzzzzzp]
+----------------------------------------------------------------------
+  Tests passing 7/12 (58%).
+
+Checking function: countCode -------------------
+   + countCode("aaacodebbb")->1
+   + countCode("codexxcode")->2
+   + countCode("cozexxcope")->2
+   + countCode("cozfxxcope")->1
+   + countCode("xxcozeyycop")->1
+   + countCode("cozcop")->0
+   + countCode("abcxyz")->0
+   + countCode("code")->1
+   + countCode("ode")->0
+   + countCode("c")->0
+   + countCode("")->0
+   + countCode("AAcodeBBcoleCCccoreDD")->3
+   + countCode("AAcodeBBcoleCCccorfDD")->2
+   + countCode("coAcodeBcoleccoreDD")->3
+----------------------------------------------------------------------
+  Tests passing 14/14 (100%).
+
+Checking function: prefixAgain -------------------
+   X prefixAgain("abXYabc", 1) should be true, but is false.
+   X prefixAgain("abXYabc", 2) should be true, but is false.
+   + prefixAgain("abXYabc", 3)
+   + prefixAgain("xyzxyxyxy", 2)
+   + prefixAgain("xyzxyxyxy", 3)
+   X prefixAgain("Hi12345Hi6789Hi10", 1) should be true, but is false.
+   X prefixAgain("Hi12345Hi6789Hi10", 2) should be true, but is false.
+   X prefixAgain("Hi12345Hi6789Hi10", 3) should be true, but is false.
+   + prefixAgain("Hi12345Hi6789Hi10", 4)
+   + prefixAgain("a", 1)
+   + prefixAgain("aa", 1)
+   + prefixAgain("ab", 1)
+----------------------------------------------------------------------
+  Tests passing 7/12 (58%).
+
+----------------------------------------------------------------------
+H08:vdiep8:ALL TESTS -- PASS 35/45 (78%).
+----------------------------------------------------------------------
+MTU2OTAxOTYyODp2ZGllcDg6SDA4Ojc3Ljc4JQ==
