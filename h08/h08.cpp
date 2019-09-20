@@ -62,7 +62,7 @@ std::string zipZap(const std::string & s)
         }
         else
         {
-            result += s.at(0);
+            result += zip.at(0);
             i++;
         }
     }
