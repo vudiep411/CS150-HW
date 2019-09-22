@@ -42,8 +42,8 @@ int checkDigit(int zip)
 
 string barCode(int zip)
 {
-  int e = checkDigit(zip);
-  string end = barCode(e);
+ // int e = checkDigit(zip);
+ // string end = barCode(e);
   int a = zip;
   int b = 0;
   string result;
