@@ -46,22 +46,22 @@ Checking function: countCode -------------------
   Tests passing 14/14 (100%).
 
 Checking function: prefixAgain -------------------
-   X prefixAgain("abXYabc", 1) should be true, but is false.
-   X prefixAgain("abXYabc", 2) should be true, but is false.
+   + prefixAgain("abXYabc", 1)
+   + prefixAgain("abXYabc", 2)
    + prefixAgain("abXYabc", 3)
    + prefixAgain("xyzxyxyxy", 2)
    + prefixAgain("xyzxyxyxy", 3)
-   X prefixAgain("Hi12345Hi6789Hi10", 1) should be true, but is false.
-   X prefixAgain("Hi12345Hi6789Hi10", 2) should be true, but is false.
-   X prefixAgain("Hi12345Hi6789Hi10", 3) should be true, but is false.
+   + prefixAgain("Hi12345Hi6789Hi10", 1)
+   + prefixAgain("Hi12345Hi6789Hi10", 2)
+   + prefixAgain("Hi12345Hi6789Hi10", 3)
    + prefixAgain("Hi12345Hi6789Hi10", 4)
    + prefixAgain("a", 1)
    + prefixAgain("aa", 1)
    + prefixAgain("ab", 1)
 ----------------------------------------------------------------------
-  Tests passing 7/12 (58%).
+  Tests passing 12/12 (100%).
 
 ----------------------------------------------------------------------
-H08:vdiep8:ALL TESTS -- PASS 40/45 (89%).
+H08:vdiep8:ALL TESTS -- PASS 45/45 (100%).
 ----------------------------------------------------------------------
-MTU2OTAyMTA4Nzp2ZGllcDg6SDA4Ojg4Ljg5JQ==
+MTU2OTEzMjc0Mjp2ZGllcDg6SDA4OjEwMC4wMCU=
