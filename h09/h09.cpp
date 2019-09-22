@@ -54,7 +54,7 @@ string barCode(int zip)
 
       result =  codeForDigit(b) + result;
   }
-  result = "|" + result + end + "|";
+ // result = "|" + result + end + "|";
   return result;
 
 }
