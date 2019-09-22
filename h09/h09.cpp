@@ -50,8 +50,9 @@ string barCode(int zip)
       b = a % 10;
       a = a / 10;
 
-      result = codeForDigit(b) + result;
+      result =  codeForDigit(b) + result;
   }
+  result = "|" + result + barCode(checkDigit(zip)) + "|";
   return result;
 
 }
