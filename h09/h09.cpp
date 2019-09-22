@@ -34,9 +34,9 @@ int checkDigit(int zip)
        a += result % 10;
        result /= 10;
     }
-if (a == 0) a = 0;
-     a = 10 - (a % 10);
 
+     a = 10 - (a % 10);
+    if (a == 10) a = 0;
     return a ;
 }
 
