@@ -13,17 +13,41 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 // Put your function implementation (definitions) in this file
 string codeForDigit(int digit)
 {
-    return ":::||";
+      if (digit == 0) return "||:::";
+    else if(digit == 1)  return ":::||";
+    else if(digit == 2)  return "::|:|";
+    else if(digit == 3)  return "::||:";
+    else if(digit == 4)  return ":|::|";
+    else if(digit == 5)  return ":|:|:";
+    else if(digit == 6)  return ":||::";
+    else if(digit == 7)  return "|:::|";
+    else if(digit == 8)  return "|::|:";
+
+    return "|:|::";
 }
 
 int checkDigit(int zip)
 {
-    return 0;
+    int result = zip;
+    int a = 0;
+    for(int i = 0 ; i < 5 ; i++)
+    {
+       a += result % 10;
+
+    }
+    if(a < 10)
+    {
+        a = 10 - a;
+    }
+    else a = 10 - (a % 10);
+
+    return a ;
 }
 
 string barCode(int zip)
 {
-    return ":::||";
+  return "";
+
 }
 
 /////////// Student Testing ///////////////////////
