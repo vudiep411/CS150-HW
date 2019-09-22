@@ -36,7 +36,8 @@ int checkDigit(int zip)
     }
     if(a < 10)
     {
-        a = 10 - a;
+        if(a == 0) a = 0;
+        else a = 10 - a;
     }
     else a = 10 - (a % 10);
 
