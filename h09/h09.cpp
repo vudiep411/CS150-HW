@@ -42,6 +42,7 @@ int checkDigit(int zip)
 
 string barCode(int zip)
 {
+  string end = barCode(checkDigit(zip));
   int a = zip;
   int b = 0;
   string result;
@@ -52,7 +53,7 @@ string barCode(int zip)
 
       result =  codeForDigit(b) + result;
   }
-  result = "|" + result + barCode(checkDigit(zip)) + "|";
+  result = "|" + result + end + "|";
   return result;
 
 }
