@@ -22,7 +22,6 @@ string codeForDigit(int digit)
     else if(digit == 6)  return ":||::";
     else if(digit == 7)  return "|:::|";
     else if(digit == 8)  return "|::|:";
-
     return "|:|::";
 }
 
@@ -33,7 +32,7 @@ int checkDigit(int zip)
     for(int i = 0 ; i < 5 ; i++)
     {
        a += result % 10;
-
+       result /= 10;
     }
     if(a < 10)
     {
