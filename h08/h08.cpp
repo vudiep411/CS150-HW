@@ -77,8 +77,10 @@ bool prefixAgain(const string & str , int n)
  string prefix = str.substr(0, n);
     int length = str.size();
 
-    for (int i = n; i <= length - n; i++) {
-        if (prefix == str.substr(i, i + n) ) {
+    for (int i = 1; i < length ; i++)
+    {
+        if (prefix == str.substr(i, n) )
+        {
             return true;
         }
     }
