@@ -49,7 +49,8 @@ string barCode(int zip)
   {
       b = a % 10;
       a = a / 10;
-      result += codeForDigit(b);
+
+      result = codeForDigit(b) + result;
   }
   return result;
 
