@@ -34,14 +34,14 @@ int checkDigit(int zip)
        a += result % 10;
        result /= 10;
     }
-   /* if(a < 10)
+    if(a <= 10)
     {
         if (a == 0)
         a = 0;
         else
         a = 10 - a;
-    }*/
-     a = 10 - (a % 10);
+    }
+    else a = 10 - (a % 10);
 
     return a ;
 }
