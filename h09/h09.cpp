@@ -42,7 +42,16 @@ int checkDigit(int zip)
 
 string barCode(int zip)
 {
-  return "";
+  int a = zip;
+  int b = 0;
+  string result;
+  for(int i = 0 ; i < 5 ; i++)
+  {
+      b = a % 10;
+      a = a / 10;
+      result += codeForDigit(b);
+  }
+  return result;
 
 }
 
