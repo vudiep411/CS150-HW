@@ -1,4 +1,4 @@
-TESTING H09--WHO AM I?
+TESTING H09--vdiep8
 ----------------------------------------------------------------------
 Checking function: Calculate some checkDigits -------------------
    + checkDigit(90621)->2
@@ -42,6 +42,6 @@ Checking function: Checking the barCode() function. -------------------
   Tests passing 5/5 (100%).
 
 ----------------------------------------------------------------------
-H09:WHO AM I?:ALL TESTS -- PASS 29/29 (100%).
+H09:vdiep8:ALL TESTS -- PASS 29/29 (100%).
 ----------------------------------------------------------------------
-MTU2OTEzNzEzNDpXSE8gQU0gST86SDA5OjEwMC4wMCU=
+MTU2OTEzNzE1Mzp2ZGllcDg6SDA5OjEwMC4wMCU=
