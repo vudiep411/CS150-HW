@@ -16,7 +16,7 @@ string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 // Place your function definitions in this file.
 bool read(const string& agePrompt , int& age , bool check )
 {
-  cout << agePrompt << endl;
+  cout << agePrompt;
   cin >> age;
   if(cin.fail())
   {
