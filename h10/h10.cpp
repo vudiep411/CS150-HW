@@ -16,7 +16,7 @@ string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 // Place your function definitions in this file.
 bool read(const string& agePrompt , int& age , bool check )
 {
- // cout << agePrompt << endl;
+  cout << agePrompt << endl;
   cin >> age;
   if(cin.fail())
   {
@@ -32,7 +32,7 @@ bool read(const string& agePrompt , int& age , bool check )
 
 bool read(const string& gpaPrompt , double& gpa , bool check )
 {
-   //cout << gpaPrompt << endl;
+  cout << gpaPrompt << endl;
   cin >> gpa;
   if(cin.fail())
   {
@@ -49,12 +49,14 @@ bool read(const string& gpaPrompt , double& gpa , bool check )
 
 bool read(const string& namePrompt , string& name , bool check )
 {
+ cout << namePrompt << endl;
  getline(cin , name);
  return check;
 }
 
 bool read(char& ch , char dot)
 {
+
  cin.get(ch);
  if(ch == dot) return false;
  return true;
