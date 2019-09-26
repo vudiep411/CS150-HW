@@ -32,7 +32,7 @@ bool read(const string& agePrompt , int& age , bool check )
 
 bool read(const string& gpaPrompt , double& gpa , bool check )
 {
-  cout << gpaPrompt << endl;
+  cout << gpaPrompt ;
   cin >> gpa;
   if(cin.fail())
   {
@@ -49,7 +49,7 @@ bool read(const string& gpaPrompt , double& gpa , bool check )
 
 bool read(const string& namePrompt , string& name , bool check )
 {
- cout << namePrompt << endl;
+ cout << namePrompt ;
  getline(cin , name);
  return check;
 }
