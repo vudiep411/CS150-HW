@@ -18,8 +18,18 @@ bool inString = false;
 char ch;
 while(cin.get(ch))
 {
-if(!inSingleCmt && !inMultiCmt && !inString)
+if(inSingleCmt && ch == '\n')   { inSingleCmt = false; }
+else if (inString && ch == '"')   { inString = false; }
+else if (inMultiCmt && ch == '*' && cin.peek() == '/') { inMultiCmt = false; }
+else if(!inSingleCmt && !inMultiCmt && !inString)
 {
+   if(ch == '"') inString = true;
+   else if(ch == '/' && cin.peek() == '*'  ) inMultiCmt = true;
+   else if(ch == '/' && cin.peek() == '/') inSingleCmt = true;
+
+
+}
+
     cout.put(ch);
 }
 
@@ -30,7 +40,7 @@ if(!inSingleCmt && !inMultiCmt && !inString)
 
 }
 
-}
+
 
 //////////////// STUDENT TESTING ////////////////////
 int run()
