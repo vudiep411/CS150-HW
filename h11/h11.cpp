@@ -29,9 +29,9 @@ else if(!inSingleCmt && !inMultiCmt && !inString)
 
 
 }
-
-    cout.put(ch);
+if(!inMultiCmt && !inSingleCmt) cout.put(ch);
 }
+
 
 
 
