@@ -29,7 +29,7 @@ else if(!inSingleCmt && !inMultiCmt && !inString)
 
 
 }
-if(cin && !inMultiCmt && !inSingleCmt) cout.put(ch);
+if( !inMultiCmt && !inSingleCmt) cout.put(ch);
 }
 
 
