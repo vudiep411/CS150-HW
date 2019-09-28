@@ -26,14 +26,16 @@ else if(!inSingleCmt && !inMultiCmt && !inString)
    if(ch == '"') inString = true;
    else if(ch == '/' && cin.peek() == '*'  )
    {
-   inMultiCmt = true;
-   cin.get(ch);
+    cin.get(ch);
+    cin.get(ch);
+    inMultiCmt = true;
+
    }
    else if(ch == '/' && cin.peek() == '/') inSingleCmt = true;
 
 
 }
-if( !inMultiCmt && !inSingleCmt) cout.put(ch);
+if(cin && !inMultiCmt && !inSingleCmt) cout.put(ch);
 }
 
 
