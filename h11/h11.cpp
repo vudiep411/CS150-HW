@@ -20,14 +20,18 @@ while(cin.get(ch))
 {
 if(inSingleCmt && ch == '\n')    inSingleCmt = false;
 else if (inString && ch == '"')    inString = false;
-else if (inMultiCmt && ch == '*' && cin.peek() == '/')  inMultiCmt = false;
+else if (inMultiCmt && ch == '*' && cin.peek() == '/')
+{
+    inMultiCmt = false;
+    cin.get(ch);
+    cin.get(ch);
+}
 else if(!inSingleCmt && !inMultiCmt && !inString)
 {
    if(ch == '"') inString = true;
    else if(ch == '/' && cin.peek() == '*'  )
    {
-    cin.get(ch);
-    cin.get(ch);
+
     inMultiCmt = true;
 
    }
