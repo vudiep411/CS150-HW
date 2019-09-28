@@ -18,9 +18,9 @@ bool inString = false;
 char ch;
 while(cin.get(ch))
 {
-if(inSingleCmt && ch == '\n')   { inSingleCmt = false; }
-else if (inString && ch == '"')   { inString = false; }
-else if (inMultiCmt && ch == '*' && cin.peek() == '/') { inMultiCmt = false; }
+if(inSingleCmt && ch == '\n')    inSingleCmt = false;
+else if (inString && ch == '"')    inString = false;
+else if (inMultiCmt && ch == '*' && cin.peek() == '/')  inMultiCmt = false;
 else if(!inSingleCmt && !inMultiCmt && !inString)
 {
    if(ch == '"') inString = true;
