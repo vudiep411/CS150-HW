@@ -26,6 +26,15 @@ else if (inMultiCmt && ch == '*' && cin.peek() == '/')
     cin.get(ch);
     cin.get(ch);
 }
+else if (inString && ch == '\\' && cin.peek() == '"')
+{
+    cout.put(ch);
+    cin.get(ch);
+
+}
+
+
+
 else if(!inSingleCmt && !inMultiCmt && !inString)
 {
    if(ch == '"') inString = true;
