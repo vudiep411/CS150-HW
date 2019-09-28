@@ -24,7 +24,11 @@ else if (inMultiCmt && ch == '*' && cin.peek() == '/')  inMultiCmt = false;
 else if(!inSingleCmt && !inMultiCmt && !inString)
 {
    if(ch == '"') inString = true;
-   else if(ch == '/' && cin.peek() == '*'  ) inMultiCmt = true;
+   else if(ch == '/' && cin.peek() == '*'  )
+   {
+   inMultiCmt = true;
+   cin.get(ch);
+   }
    else if(ch == '/' && cin.peek() == '/') inSingleCmt = true;
 
 
