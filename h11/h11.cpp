@@ -7,11 +7,28 @@
 #include <iostream>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 // Write your function here
 void strip()
 {
+bool inSingleCmt = false;
+bool inMultiCmt = false;
+bool inString = false;
+char ch;
+while(cin.get(ch))
+{
+if(!inSingleCmt && !inMultiCmt && !inString)
+{
+    cout.put(ch);
+}
+
+
+
+
+
+
+}
 
 }
 
