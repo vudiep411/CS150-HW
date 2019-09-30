@@ -44,12 +44,11 @@ void expense()
             break;
         }
 
-        cout << fixed << setprecision(2) << total << "\n";
 
     }
 
 
-
+cout << fixed << setprecision(2) << total << "\n";
 
 
 
