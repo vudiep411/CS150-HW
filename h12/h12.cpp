@@ -13,8 +13,8 @@ string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 // Write your function here
 void expense()
 {
-    double num = 0.0;
-    double total = 0.0;
+    double num ;
+    double total ;
     char ch;
      while(cin.peek() != EOF)
      {
@@ -31,6 +31,8 @@ void expense()
          cout.put(ch);
      }
        cout << ", ";
+       num = 0.0;
+       total = 0.0;
     while(cin.get(ch))
     {
         if(isdigit(ch))
