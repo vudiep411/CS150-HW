@@ -22,10 +22,9 @@ void expense()
      {
          if(ch == ' ' && cin.peek() == ' ')
          {
-
              continue;
          }
-         else if(isdigit(cin.peek()))
+         else if(isdigit(ch))
          {
              break;
          }
