@@ -13,7 +13,51 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 // Write your function here
 void expense()
 {
-    
+    double num = 0.0;
+    double total = 0.0;
+    char ch;
+     while(cin.peek() != EOF)
+     {
+     while(cin.get(ch))
+     {
+         if(ch == ' ' && cin.peek() == ' ')
+         {
+             cin.get(ch);
+         }
+         else if(isdigit(cin.peek()))
+         {
+             break;
+         }
+         cout.put(ch);
+     }
+
+    while(cin.peek() == '\n')
+    {
+        if(isdigit(cin.peek()))
+        {
+            cin >> num;
+            total += num;
+        }
+        else
+        {
+            cin.get(ch);
+        }
+
+        cout << fixed << setprecision(2) << total << "\n";
+
+    }
+
+
+
+
+
+
+
+     }
+
+
+
+
 }
 
 //////////////// STUDENT TESTING ////////////////////
