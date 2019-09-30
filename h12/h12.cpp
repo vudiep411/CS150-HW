@@ -30,11 +30,12 @@ void expense()
          }
          cout.put(ch);
      }
-
-    while(cin.peek() == '\n')
+       cout << ", ";
+    while(cin.get(ch))
     {
-        if(isdigit(cin.peek()))
+        if(isdigit(ch))
         {
+            cin.unget();
             cin >> num;
             total += num;
         }
