@@ -39,10 +39,7 @@ void expense()
             cin >> num;
             total += num;
         }
-         if(ch == '\n')
-        {
-            break;
-        }
+
 
 
     }
