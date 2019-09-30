@@ -39,9 +39,9 @@ void expense()
             cin >> num;
             total += num;
         }
-        else
+        else if(ch == '\n')
         {
-            cin.get(ch);
+            break;
         }
 
         cout << fixed << setprecision(2) << total << "\n";
