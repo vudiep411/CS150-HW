@@ -24,7 +24,7 @@ void expense()
          {
              continue;
          }
-          if(isdigit(cin.peek()))
+         else if(isdigit(cin.peek()))
          {
              break;
          }
@@ -33,7 +33,7 @@ void expense()
        cout << ", ";
     while(cin.get(ch))
     {
-        if(isdigit(ch))
+        if(isdigit(cin.peek()))
         {
             cin.unget();
             cin >> num;
