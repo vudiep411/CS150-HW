@@ -8,7 +8,7 @@
 #include <cctype>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 // Write your function here
 void expense()
@@ -24,7 +24,7 @@ void expense()
          {
              continue;
          }
-         else if(isdigit(cin.peek()))
+          if(isdigit(cin.peek()))
          {
              break;
          }
