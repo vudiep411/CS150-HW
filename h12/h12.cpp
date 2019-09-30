@@ -39,13 +39,16 @@ void expense()
             cin >> num;
             total += num;
         }
-
+        if(ch == '\n')
+        {
+            break;
+        }
 
 
     }
 
 
-cout << fixed << setprecision(2) << total << "\n";
+cout << fixed << setprecision(2) << total << endl;
 
 
 
