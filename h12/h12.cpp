@@ -36,7 +36,7 @@ void expense()
     {
         if(isdigit(ch))
         {
-            cin.unget();
+
             cin >> num;
             total += num;
         }
