@@ -24,7 +24,7 @@ void expense()
          {
              continue;
          }
-         else if(isdigit(ch))
+         else if(isdigit(cin.peek()))
          {
              break;
          }
