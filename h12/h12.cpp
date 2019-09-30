@@ -23,6 +23,7 @@ void expense()
          if(ch == ' ' && cin.peek() == ' ')
          {
              cin.get(ch);
+             continue;
          }
          else if(isdigit(cin.peek()))
          {
