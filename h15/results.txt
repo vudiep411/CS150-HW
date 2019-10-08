@@ -1,4 +1,4 @@
-TESTING H15--vdiep8?
+TESTING H15--vdiep8
 ----------------------------------------------------------------------
 Checking: Compiling under two different platforms. -------------------
    + Compiles under C++ 98(10 pts)
@@ -24,6 +24,6 @@ Checking: to_string function -------------------
   Tests passing 11/11 (100%).
 
 ----------------------------------------------------------------------
-H15:vdiep8?:ALL TESTS -- PASS 31/31 (100%).
+H15:vdiep8:ALL TESTS -- PASS 31/31 (100%).
 ----------------------------------------------------------------------
-MTU3MDU2MjQzMjp2ZGllcDg/OkgxNToxMDAuMDAl
+MTU3MDU2MjQ5ODp2ZGllcDg6SDE1OjEwMC4wMCU=
