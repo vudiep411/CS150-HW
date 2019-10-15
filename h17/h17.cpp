@@ -17,7 +17,7 @@ string toString(Suit s)
     switch(s)
     {
        case Suit::CLUBS: return "Clubs";
-       case Suit::SPADES: return "Spade";
+       case Suit::SPADES: return "Spades";
        case Suit::DIAMONDS: return "Diamonds";
        case Suit::HEARTS: return "Hearts";
 
