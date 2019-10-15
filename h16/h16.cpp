@@ -5,6 +5,7 @@
  */
 #include <string>
 #include <cmath>
+
 using namespace std;
 
 string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
@@ -13,7 +14,8 @@ string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 // Add your implementation here
 void get(istream& in, Point& p)
 {
-    in >> p.x >> p.y;
+   char ch;
+   in >> p.x >> ch >> p.y;
 }
 void print(ostream& out, const Point& p)
 {
