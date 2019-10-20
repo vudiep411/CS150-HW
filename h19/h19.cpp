@@ -33,7 +33,6 @@ while(in)
         if(!ispunct(c)) temp += tolower(c);
     }
     word = temp;
-    // next
     bool found = false;
     for(WORD& e : result)
     {
@@ -41,7 +40,7 @@ while(in)
         {
         found = true;
          e.positions.push_back(pos);
-         continue;
+
         }
     }
 
