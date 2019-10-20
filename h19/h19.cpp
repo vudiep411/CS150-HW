@@ -40,32 +40,32 @@ while(in)
         {
         found = true;
          e.positions.push_back(pos);
-         continue;
         }
     }
-  if(!found)
+
+  if(found)
+  {
+      continue;
+  }
+  else if(!found)
   {
       for(string ex : excluded)
       {
-          if(word == ex)
-          {
-          found = true;
-          continue;
-          }
+          if(word == ex) found = true;
       }
   }
-  if(!found)
+  //s
+ if(found) continue;
+ else if(!found)
  {
      for(string d : dictionary)
       {
-          if (word == d)
-          {
-          found = true;
-          continue;
-          }
+          if (word == d) found = true;
       }
  }
-   if(!found)
+  if(found) continue;
+  //s
+  else if(!found)
   {
       WORD a;
       a.word = word;
