@@ -40,13 +40,16 @@ while(in)
         if (word == e.word)
         {
         found = true;
+         e.positions.push_back(pos);
+         result.push_back(e);
         }
-        e.positions.push_back(pos);
+
     }
 
     //s
   if(found)
   {
+
       continue;
   }
   else if(!found)
