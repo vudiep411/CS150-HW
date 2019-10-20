@@ -35,7 +35,7 @@ while(in)
     word = temp;
     // next
     bool found = false;
-    for(WORD e : result)
+    for(WORD& e : result)
     {
         if (word == e.word)
         {
