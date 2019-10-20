@@ -26,17 +26,14 @@ while(in)
 {
    pos = static_cast<long long>(in.tellg());
    if(pos == -1) break;
-
     in >> word >> ws;
     string temp;
     for(char c : word)
     {
-        if(!ispunct(c))
-        {
-            temp += tolower(c);
-        }
+        if(!ispunct(c)) temp += tolower(c);
     }
     word = temp;
+    // next
     bool found = false;
     for(WORD e : result)
     {
@@ -46,6 +43,7 @@ while(in)
         found = true;
         }
     }
+    //s
   if(found)
   {
       continue;
@@ -57,6 +55,7 @@ while(in)
           if(word == ex) found = true;
       }
   }
+  //s
  if(found) continue;
  else if(!found)
  {
@@ -66,6 +65,7 @@ while(in)
       }
  }
   if(found) continue;
+  //s
   else if(!found)
   {
       WORD a;
