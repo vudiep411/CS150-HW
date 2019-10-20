@@ -34,9 +34,9 @@ while(in)
         if(!ispunct(c))
         {
             temp += tolower(c);
-            word = temp;
         }
     }
+    word = temp;
     bool found = false;
     for(WORD e : result)
     {
