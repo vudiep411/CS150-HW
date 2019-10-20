@@ -50,7 +50,7 @@ while(in)
   }
   else if(!found)
   {
-      for(auto ex : excluded)
+      for(string ex : excluded)
       {
           if(word == ex) found = true;
       }
@@ -59,7 +59,7 @@ while(in)
  if(found) continue;
  else if(!found)
  {
-     for(auto d : dictionary)
+     for(string d : dictionary)
       {
           if (word == d) found = true;
       }
