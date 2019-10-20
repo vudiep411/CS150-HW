@@ -41,6 +41,7 @@ while(in)
         {
         found = true;
          e.positions.push_back(pos);
+         continue;
         }
     }
 
