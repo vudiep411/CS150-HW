@@ -54,7 +54,6 @@ while(in)
           }
       }
   }
-
   if(!found)
  {
      for(string d : dictionary)
