@@ -41,9 +41,9 @@ while(in)
         {
         found = true;
          e.positions.push_back(pos);
-         result.push_back(e);
-        }
 
+        }
+        result.push_back(e);
     }
 
     //s
