@@ -21,11 +21,11 @@ vector<WORD> spellCheck(istream& in, const vector<string>& dictionary, const vec
 {
 vector<WORD> result;
 string word;
-bool found = false;
+long long pos;
 while(in)
 {
-   long long pos = in.tellg();
-   if(pos == -1 && in.eof()) break;
+   pos = static_cast<long long>(in.tellg());
+   if(pos == -1) break;
 
     in >> word >> ws;
     string temp;
@@ -36,9 +36,8 @@ while(in)
             temp += tolower(c);
             word = temp;
         }
-
     }
-
+    bool found = false;
     for(WORD e : result)
     {
         if (word == e.word)
