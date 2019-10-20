@@ -21,6 +21,7 @@ vector<WORD> spellCheck(istream& in, const vector<string>& dictionary, const vec
 {
 vector<WORD> result;
 string word;
+bool found = false;
 while(in)
 {
    long long pos = in.tellg();
@@ -37,7 +38,7 @@ while(in)
         }
 
     }
-    bool found = false;
+
     for(WORD e : result)
     {
         if (word == e.word)
