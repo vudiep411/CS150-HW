@@ -39,10 +39,11 @@ while(in)
     {
         if (word == e.word)
         {
-        e.positions.push_back(pos);
         found = true;
         }
+        e.positions.push_back(pos);
     }
+
     //s
   if(found)
   {
