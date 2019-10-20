@@ -11,13 +11,71 @@
 #include <cctype>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 
 #include "h19.h"
 
 // Place your function here
+vector<WORD> spellCheck(istream& in, const vector<string>& dictionary, const vector<string>& excluded)
+{
+vector<WORD> result;
+string word;
+while(in)
+{
+   long long pos = in.tellg();
+   if(pos == -1 && in.eof()) break;
 
+    in >> word >> ws;
+    string temp;
+    for(char c : word)
+    {
+        if(!ispunct(c))
+        {
+            temp += tolower(c);
+            word = temp;
+        }
+
+    }
+    bool found = false;
+    for(WORD e : result)
+    {
+        if (word == e.word)
+        {
+        e.positions.push_back(pos);
+        found = true;
+        }
+    }
+  if(found)
+  {
+      continue;
+  }
+  else if(!found)
+  {
+      for(auto ex : excluded)
+      {
+          if(word == ex) found = true;
+      }
+  }
+ if(found) continue;
+ else if(!found)
+ {
+     for(auto d : dictionary)
+      {
+          if (word == d) found = true;
+      }
+ }
+  if(found) continue;
+  else if(!found)
+  {
+      WORD a;
+      a.word = word;
+      a.positions.push_back(pos);
+      result.push_back(a);
+  }
+}
+return result;
+}
 
 
 
