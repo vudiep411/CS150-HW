@@ -15,6 +15,11 @@ const int BPP = 4;
 void negative(unsigned char * const img, int width, int height)
 {
     // Add your code here
+    void negative(unsigned char * const img, int width, int height)
+    {
+
+
+    }
 }
 
 /////////////// STUDENT TESTING ////////////////////
