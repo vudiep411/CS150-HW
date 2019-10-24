@@ -18,6 +18,7 @@ void negative(unsigned char * const img, int width, int height)
    unsigned char * p = img;
    while(p != end)
    {
+    p++;
    *p = 255 - *p;
     p++;
    *p = 255 - *p;
