@@ -32,9 +32,6 @@ else if (inString && ch == '\\' && cin.peek() == '"')
     cin.get(ch);
 
 }
-
-
-
 else if(!inSingleCmt && !inMultiCmt && !inString)
 {
    if(ch == '"') inString = true;
@@ -45,11 +42,13 @@ else if(!inSingleCmt && !inMultiCmt && !inString)
 
    }
    else if(ch == '/' && cin.peek() == '/') inSingleCmt = true;
-
-
 }
 if(cin && !inMultiCmt && !inSingleCmt) cout.put(ch);
+
+
 }
+
+
 
 }
 

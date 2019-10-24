@@ -70,8 +70,11 @@ double getReal(const string& prompt)
             {
                 cerr << line;
                 line.clear();
+
+
             }
-           line = getLine(prompt);
+
+          line = getLine(prompt);
     }
          return 0.0;
 }
