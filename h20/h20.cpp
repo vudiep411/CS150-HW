@@ -14,7 +14,7 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 const int BPP = 4;
 void negative(unsigned char * const img, int width, int height)
 {
-   unsigned char *  end = img + width * height * BPP;
+   const auto end = img + width * height * BPP;
    unsigned char * p = img;
    while(p != end)
    {
