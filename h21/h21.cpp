@@ -20,10 +20,10 @@ void greenScreen(unsigned char * const img, int width, int height)
     auto const * end = img + width * height * BPP;
     while(p != end)
     {
-    unsigned char maxValue = *p;
-        if(*(p + 1) >  2 * maxValue && *(p + 2) > 2 * maxValue)
+
+        if(*(p + 1) >  *p * 2 && *(p + 2) > *p * 2)
         {
-            *(p + 0) = 0;
+            *p = 0;
             *(p + 1) = 0;
             *(p + 2) = 0;
             *(p + 3) = 0;
@@ -38,7 +38,7 @@ void composite(unsigned char * const bg, unsigned char * const fg,
     greenScreen(fg, width, height);
     unsigned char* dest = fg;
     unsigned char* src = bg;
-    unsigned char* end = fg + width * height * 4;
+    auto const* end = fg + width * height * 4;
     while(dest != end)
     {
         if(*dest == 0 && *(dest + 1) == 0 && *(dest + 2) == 0 && *(dest + 3) == 0)
