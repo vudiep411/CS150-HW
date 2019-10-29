@@ -17,7 +17,7 @@ const int BPP = 4;
 void greenScreen(unsigned char * const img, int width, int height)
 {
     unsigned char *p = img;
-    auto const * end = img + width * height * BPP;
+    auto * const  end = img + width * height * BPP;
     while(p != end)
     {
 
