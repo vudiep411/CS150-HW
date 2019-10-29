@@ -44,6 +44,10 @@ void composite(unsigned char * const bg, unsigned char * const fg,
         if(*dest == 0 && *(dest + 1) == 0 && *(dest + 2) == 0 && *(dest + 3) == 0)
         {
             *dest = *src;
+            *(dest + 1) = *(src + 1);
+            *(dest + 2) = *(src + 2);
+            *(dest + 3) = *(src + 3);
+
         }
         dest += 4;
         src += 4;
