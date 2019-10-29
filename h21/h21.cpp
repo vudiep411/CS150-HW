@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 
 #include "h21.h"
@@ -16,13 +16,39 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 const int BPP = 4;
 void greenScreen(unsigned char * const img, int width, int height)
 {
-    // Add your code here
+    unsigned char *p = img;
+    auto const * end = img + width * height * BPP;
+    while(p != end)
+    {
+    unsigned char maxValue = *p;
+        if(*(p + 1) >  2 * maxValue && *(p + 2) > 2 * maxValue)
+        {
+            *(p + 0) = 0;
+            *(p + 1) = 0;
+            *(p + 2) = 0;
+            *(p + 3) = 0;
+        }
+        p += 4;
+    }
 }
 
 void composite(unsigned char * const bg, unsigned char * const fg,
                 int width, int height)
 {
-    // Add your code here
+    greenScreen(fg, width, height);
+    unsigned char* dest = fg;
+    unsigned char* src = bg;
+    unsigned char* end = fg + width * height * 4;
+    while(dest != end)
+    {
+        if(*dest == 0 && *(dest + 1) == 0 && *(dest + 2) == 0 && *(dest + 3) == 0)
+        {
+            *dest = *src;
+        }
+        dest += 4;
+        src += 4;
+    }
+
 }
 
 /////////////// STUDENT TESTING ////////////////////
