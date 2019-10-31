@@ -31,7 +31,6 @@ void greenScreen(unsigned char * const img, int width, int height)
         p += 4;
     }
 }
-
 void composite(unsigned char * const bg, unsigned char * const fg,
                 int width, int height)
 {
@@ -47,12 +46,10 @@ void composite(unsigned char * const bg, unsigned char * const fg,
             *(dest + 1) = *(src + 1);
             *(dest + 2) = *(src + 2);
             *(dest + 3) = *(src + 3);
-
         }
         dest += 4;
         src += 4;
     }
-
 }
 
 /////////////// STUDENT TESTING ////////////////////
