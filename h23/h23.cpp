@@ -33,6 +33,8 @@ MinMax minMax(const double *ptr, size_t size)
     auto * atEnd = ptr + (size - 1);
     if(size == 0)
     {
+        result.min = 0;
+        result.max = 0;
         return result;
     }
     while (ptr < atEnd)
