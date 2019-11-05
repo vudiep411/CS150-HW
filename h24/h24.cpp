@@ -30,12 +30,10 @@ void translate(UC* const img, int width, int height, int dx, int dy)
             r[0] = temp;
         }
         }
+            if(dy < 0) dy = height - abs(dx) % height;
+             else dy = dy % height;
         for(int i = 0 ; i < dy ; i++)
         {
-             if(dy < 0) dy = height - abs(dx) % height;
-             else dy = dy % height;
-
-
             for(int col = 0 ; col < width; col++)
             {
                 auto r = pixel + width * (height - 1);
