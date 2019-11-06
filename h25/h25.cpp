@@ -20,12 +20,12 @@ bool sameSet(const int *aBeg, const int *aEnd,
     bool aMatches = false;
     bool bMatches = false;
 
-    // const size_t A_LEN = aEnd - aBeg;
-    // const size_t B_LEN = bEnd - bBeg;
+    const size_t A_LEN = aEnd - aBeg;
+    const size_t B_LEN = bEnd - bBeg;
 
-    for (auto i = 0; i < *aEnd; i++)
+    for (size_t i = 0; i < A_LEN; i++)
     {
-        for (auto j = 0; j < *bEnd; j++)
+        for (size_t j = 0; j < B_LEN; j++)
         {
             if (aBeg[i] == bBeg[j])
             {
@@ -38,10 +38,10 @@ bool sameSet(const int *aBeg, const int *aEnd,
         if (!aMatches) { break; }
     }
 
-    for (auto i = 0; i < *bEnd; i++)
+    for (size_t i = 0; i < B_LEN; i++)
     {
 
-        for (auto j = 0; j < *aEnd; j++)
+        for (size_t j = 0; j < A_LEN; j++)
         {
 
             if (bBeg[i] == aBeg[j])
