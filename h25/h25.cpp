@@ -35,7 +35,11 @@ bool sameSet(const int *aBeg, const int *aEnd,
                 aMatches = false;
 
         }
-        if (!aMatches)  break;
+        if (!aMatches)
+        {
+         aMatches = false;
+         break;
+        }
     }
 
     // for (size_t i = 0; i < B_LEN; i++)
