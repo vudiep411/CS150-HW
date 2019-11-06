@@ -30,7 +30,7 @@ void translate(UC* const img, int width, int height, int dx, int dy)
             r[0] = temp;
         }
         }
-            if(dy < 0) dy = height - abs(dy) % height;
+             if(dy < 0) dy = height - abs(dy) % height;
              else dy = dy % height;
         for(int i = 0 ; i < dy ; i++)
         {
@@ -44,8 +44,6 @@ void translate(UC* const img, int width, int height, int dx, int dy)
             }
 
         }
-
-
 }
 
 
