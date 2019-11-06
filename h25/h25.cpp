@@ -35,29 +35,29 @@ bool sameSet(const int *aBeg, const int *aEnd,
                 aMatches = false;
 
         }
-        if (!aMatches) { break; }
+        if (!aMatches)  break;
     }
 
-    for (size_t i = 0; i < B_LEN; i++)
-    {
+    // for (size_t i = 0; i < B_LEN; i++)
+    // {
 
-        for (size_t j = 0; j < A_LEN; j++)
-        {
+    //     for (size_t j = 0; j < A_LEN; j++)
+    //     {
 
-            if (bBeg[i] == aBeg[j])
-            {
+    //         if (bBeg[i] == aBeg[j])
+    //         {
 
-                bMatches = true;
-                break; //save some work
-            }
+    //             bMatches = true;
+    //             break; //save some work
+    //         }
 
-            bMatches = false;
+    //         bMatches = false;
 
-        }
-        if (!bMatches) { break; }
-    }
+    //     }
+    //     if (!bMatches) { break; }
+    // }
 
-    return aMatches && bMatches ;
+    return aMatches;// && bMatches ;
 }
 void copyEvens(const int a[], size_t aSize, int b[], size_t& bSize)
 {
