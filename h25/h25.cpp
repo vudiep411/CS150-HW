@@ -32,7 +32,6 @@ bool sameSet(const int *aBeg, const int *aEnd,
                  aMatches = true;
                   break;
             }
-                aMatches = false;
 
         }
         if (!aMatches)
@@ -44,19 +43,14 @@ bool sameSet(const int *aBeg, const int *aEnd,
 
     for (size_t i = 0; i < B_LEN; i++)
     {
-
         for (size_t j = 0; j < A_LEN; j++)
         {
-
-            if (bBeg[i] == aBeg[j])
+           if (bBeg[i] == aBeg[j])
             {
-
                 bMatches = true;
                 break; //save some work
             }
-
             bMatches = false;
-
         }
         if (!bMatches) { break; }
     }
