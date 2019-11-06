@@ -59,7 +59,7 @@ bool sameSet(const int *aBeg, const int *aEnd,
         if (!bMatches) { break; }
     }
 
-    return aMatches ;
+    return aMatches && bMatches ;
 }
 void copyEvens(const int a[], size_t aSize, int b[], size_t& bSize)
 {
