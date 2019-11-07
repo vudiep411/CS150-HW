@@ -54,6 +54,7 @@ const char * findStr(const char *str1, const char *str2)
             p2++;
         }
         if (*p2 == '\0')  return p;
+        else if(*p2) return 0;
     }
     return nullptr;
 }
