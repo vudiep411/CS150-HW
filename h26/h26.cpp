@@ -53,7 +53,7 @@ const char * findStr(const char *str1, const char *str2)
             p2++;
         }
         if (*p2 == '\0') { return p; }
-        else if (*p1 == '\0') { return nullptr; }
+
     }
     return nullptr;
 }
