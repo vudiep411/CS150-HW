@@ -27,9 +27,9 @@ while(*b)
 }
  while(a < b)
     {
-        char * temp = a;
+        char temp = *a;
         *a = *b;
-        *b = *a;
+        *b = temp;
         a++;
         b--;
     }
