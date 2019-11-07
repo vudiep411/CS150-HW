@@ -7,13 +7,19 @@
 #include <iostream>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 #include "h26.h"
 
 // Add your code here
+void reverse(char * s)
+{
 
+}
+const char * findStr(const char *str1, const char *str2)
+{
 
+}
 //////////////////////// STUDENT TESTING //////////////////////////
 int run()
 {

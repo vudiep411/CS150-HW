@@ -32,7 +32,7 @@ bool sameSet(const int *aBeg, const int *aEnd,
                  aMatches = true;
                   break;
             }
-
+                aMatches = false;
         }
         if (!aMatches)
         {

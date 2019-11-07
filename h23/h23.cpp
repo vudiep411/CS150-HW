@@ -55,8 +55,17 @@ MinMax minMax(const double *ptr, size_t size)
 
 int run()
 {
-    // Just some samples for class
-    cout << "Try some code on your own" << endl;
+
+    //test alternatingSum()
+    int a[] = { 1 , 2 , 3 , 4 , 5 , 6}; // 1 - 2 + 3 - 4 + 5 - 6 = -3
+    int b = alternatingSum(a , 6);
+    cout << "expected -3 -> " << b << endl;
+
+    //test minMax()
+    double c[] = { 1 , 2 , 3 , 4 , 5 , 6}; // max = 6 , min = 1
+    double * p = &c[0];
+ MinMax max = minMax(p , 6);
+ cout << "expected 6 -> " << *max.max << ", expected 1 -> " << *max.min << endl;
 
     return 0;
 }
