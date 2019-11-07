@@ -38,7 +38,8 @@ while(*b)
 const char * findStr(const char *str1, const char *str2)
 {
     if (*str2 == '\0')  return str1;
-    size_t len = -1;
+
+    size_t len = 0;
     auto temp = *str1;
     while (temp != '\0')  {len++; temp++;}
 
