@@ -47,7 +47,7 @@ const char * findStr(const char *str1, const char *str2)
         auto p = str1 + i;
         auto p1 = str1 + i;
         auto p2 = str2;
-        while (*p1 != '\0' && *p2 != '\0' && *p1 == *p2)
+        while (*p1  && *p2  && *p1 == *p2)
         {
             p1++;
             p2++;
