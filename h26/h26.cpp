@@ -37,19 +37,24 @@ while(*b)
 }
 const char * findStr(const char *str1, const char *str2)
 {
-  if(*str2 == '\0') return str1;
-   while(*str1 != '\0')
-   {
-       auto p1 = str1;
-       auto p2 = str2;
-       while(*p1 == *p2 && *p1 && *p2)
-       {
-           p1++;
-           p2++;
-       }
-       if(*p2 == '\0') return p2;
-       str1++;
-   }
+    if (*str2 == '\0') { return str1; }
+    size_t len = -1;
+    auto temp = *str1;
+    while (temp != '\0') { len++; temp++; }
+
+    for (size_t i = 0; i < len; i++)
+    {
+        auto p = str1 + i;
+        auto p1 = str1 + i;
+        auto p2 = str2;
+        while (*p1 != '\0' && *p2 != '\0' && *p1 == *p2)
+        {
+            p1++;
+            p2++;
+        }
+        if (*p2 == '\0') { return p; }
+        else if (*p1 == '\0') { return nullptr; }
+    }
     return nullptr;
 }
 
