@@ -41,7 +41,7 @@ const char * findStr(const char *str1, const char *str2)
 
     size_t len = 0;
 
-    while (*str1 != '\0')  len++;
+    while (*str1 != '\0')  {len++ , str1++;}
 
     for (size_t i = 0; i < len; i++)
     {
