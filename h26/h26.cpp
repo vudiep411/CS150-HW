@@ -48,7 +48,7 @@ const char * findStr(const char *str1, const char *str2)
            p2++;
        }
        if(*p1 == '\0') return p2;
-       p1++;
+       str1++;
    }
     return nullptr;
 }
