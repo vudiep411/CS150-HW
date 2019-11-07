@@ -14,7 +14,7 @@ Checking function: The reverse Procedure -------------------
 Checking function: Test your findStr function. -------------------
    + Find at beginning.-> "Sote soma some something somantha solly sonny"
    + Find at end.-> "sonny"
-   X Returns nullptr when it shouldn't
+   + Find anything-> "Sote soma some something somantha solly sonny"
    + Find some-> "some something somantha solly sonny"
    + Find soman-> "somantha solly sonny"
    + Find som-> "soma some something somantha solly sonny"
@@ -23,9 +23,9 @@ Checking function: Test your findStr function. -------------------
    + Find thing-> "thing somantha solly sonny"
    + Not found.
 ----------------------------------------------------------------------
-  Tests passing 9/10 (90%).
+  Tests passing 10/10 (100%).
 
 ----------------------------------------------------------------------
-H26:vdiep8:ALL TESTS -- PASS 16/17 (94%).
+H26:vdiep8:ALL TESTS -- PASS 17/17 (100%).
 ----------------------------------------------------------------------
-MTU3MzExNTIzNTp2ZGllcDg6SDI2Ojk0LjEyJQ==
+MTU3MzExNTQ3NDp2ZGllcDg6SDI2OjEwMC4wMCU=
