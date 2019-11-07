@@ -14,11 +14,30 @@ string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 // Add your code here
 void reverse(char * s)
 {
+char * a = s;
+char * b = s;
+while(*b)
+{
+    b++;
+    if(*b == '\0')
+    {
+        b--;
+        break;
+    }
+}
+ while(a < b)
+    {
+        char * temp = a;
+        *a = *b;
+        *b = *a;
+        a++;
+        b--;
+    }
 
 }
 const char * findStr(const char *str1, const char *str2)
 {
-
+return str1;
 }
 //////////////////////// STUDENT TESTING //////////////////////////
 int run()
