@@ -40,8 +40,8 @@ const char * findStr(const char *str1, const char *str2)
     if (*str2 == '\0')  return str1;
 
     size_t len = 0;
-
-    while (*str1)  {len++ , str1++;}
+    auto temp = *str1;
+    while (temp)  {len++ , temp++;}
 
     for (size_t i = 0; i < len; i++)
     {
