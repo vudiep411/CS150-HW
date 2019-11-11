@@ -27,6 +27,7 @@ FlexArray& readData(istream& in, FlexArray& a)
         {
             cap *= 2;
             int* b[cap]{a.data_.release()};
+            a.data_.reset(*b);
         }
     }
     return a;
