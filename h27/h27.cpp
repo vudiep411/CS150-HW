@@ -20,15 +20,16 @@ FlexArray& readData(istream& in, FlexArray& a)
     int j , pos = 0;
     while(in >> j)
     {
-        a.size_++;
-        a.data_[pos] = j;
-        pos++;
         if(a.size_ > cap)
         {
             cap *= 2;
           a.data_.reset(new int[cap]);
         }
+        a.size_++;
+        a.data_[pos] = j;
+        pos++;
     }
+
     return a;
 }
 string toString(const FlexArray& a)
