@@ -17,7 +17,7 @@ FlexArray& readData(std::istream& in, FlexArray& a)
 {
     a.data_ = unique_ptr<int[]>(new int[INITIAL_CAPACITY]);
     int j , pos = 0;
-    if(in.fail()) a.size_ = 0;
+    if(in.fail()) return a;
     while(in >> j && !in.fail())
     {
         a.size_++;
