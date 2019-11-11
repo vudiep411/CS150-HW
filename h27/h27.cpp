@@ -15,13 +15,19 @@ string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 // Add your code here
 FlexArray& readData(istream& in, FlexArray& a)
 {
-    a.data_ = unique_ptr<int[]>(new int[INITIAL_CAPACITY]);
+    size_t cap = INITIAL_CAPACITY;
+    a.data_ = unique_ptr<int[]>(new int[cap]);
     int j , pos = 0;
     while(in >> j)
     {
         a.size_++;
         a.data_[pos] = j;
         pos++;
+        if(a.size_ == cap)
+        {
+            cap *= 2;
+            int* b[cap]{a.data_.release()};
+        }
     }
     return a;
 }
