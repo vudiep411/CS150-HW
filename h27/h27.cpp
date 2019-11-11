@@ -13,8 +13,28 @@ string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 #include "h27.h"
 
 // Add your code here
-
-
+FlexArray& readData(std::istream& in, FlexArray& a)
+{
+    a.data_ = unique_ptr<int[]>(new int[INITIAL_CAPACITY]);
+    int j , pos = 0;
+    while(in >> j)
+    {
+        a.size_++;
+        a.data_[pos] = j;
+        pos++;
+    }
+    return a;
+}
+std::string toString(const FlexArray& a)
+{
+    string result;
+    result += to_string(a.data_[0]);
+    for(size_t i = 1 ; i < a.size_ ; i++)
+    {
+        result += ", " + to_string(a.data_[i]);
+    }
+    return "{" + result + "}";
+}
 //////////////////////// STUDENT TESTING //////////////////////////
 #include <iostream>
 #include <sstream>
