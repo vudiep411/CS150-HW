@@ -17,12 +17,11 @@ FlexArray& readData(istream& in, FlexArray& a)
 {
     a.data_ = unique_ptr<int[]>(new int[INITIAL_CAPACITY]);
     int j , pos = 0;
-    // if(in.fail()) return a;
-    while(in >> j && !in.fail())
+    while(in >> j)
     {
         a.size_++;
-       // a.data_[pos] = j;
-       // pos++;
+        a.data_[pos] = j;
+        pos++;
     }
     return a;
 }
