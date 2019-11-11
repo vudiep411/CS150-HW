@@ -28,10 +28,13 @@ FlexArray& readData(std::istream& in, FlexArray& a)
 std::string toString(const FlexArray& a)
 {
     string result;
+    if(a.size_ > 0)
+    {
     result += to_string(a.data_[0]);
     for(size_t i = 1 ; i < a.size_ ; i++)
     {
         result += ", " + to_string(a.data_[i]);
+    }
     }
     return "{" + result + "}";
 }
