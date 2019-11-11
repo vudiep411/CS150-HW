@@ -25,9 +25,9 @@ FlexArray& readData(istream& in, FlexArray& a)
         pos++;
         if(a.size_ == cap)
         {
+            a.data_.reset();
             cap *= 2;
-            int* b[cap]{a.data_.release()};
-            a.data_.reset(*b);
+            a.data_ = unique_ptr<int[]>(new int[cap]);
         }
     }
     return a;
