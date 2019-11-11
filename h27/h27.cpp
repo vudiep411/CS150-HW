@@ -8,7 +8,7 @@
 #include <memory>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 #include "h27.h"
 
@@ -21,8 +21,8 @@ FlexArray& readData(istream& in, FlexArray& a)
     while(in >> j && !in.fail())
     {
         a.size_++;
-        a.data_[pos] = j;
-        pos++;
+       // a.data_[pos] = j;
+       // pos++;
     }
     return a;
 }
