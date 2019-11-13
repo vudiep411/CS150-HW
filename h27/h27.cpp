@@ -20,10 +20,16 @@ FlexArray& readData(istream& in, FlexArray& a)
     int j , pos = 0;
     while(in >> j)
     {
-        if(a.size_ > cap)
+        if(a.size_ == cap)
         {
             cap *= 2;
-          a.data_.reset(new int[cap]);
+            unique_ptr<int[]> b;
+            b.reset(a.data_.release());
+            a.data_ = unique_ptr<int[]>(new int[cap]);
+            for(size_t i = 0 ; i < a.size_ ; i++)
+            {
+                a.data_[i] = b[i];
+            }
         }
         a.size_++;
         a.data_[pos] = j;
