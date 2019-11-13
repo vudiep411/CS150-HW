@@ -16,7 +16,7 @@ string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
    Bug::Bug(int startPos)
    {
        position_ = startPos;
-       direction_ = 0;
+       direction_ = 1;
    }
    void Bug::move()
     {
