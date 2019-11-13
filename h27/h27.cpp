@@ -27,15 +27,17 @@ FlexArray& readData(istream& in, FlexArray& a)
             b.reset(a.data_.release());
             a.data_ = unique_ptr<int[]>(new int[cap]);
             for(size_t i = 0 ; i < a.size_ ; i++)
-            {
                 a.data_[i] = b[i];
-            }
         }
         a.size_++;
         a.data_[pos] = j;
         pos++;
     }
-
+            unique_ptr<int[]> b;
+            b.reset(a.data_.release());
+            a.data_ = unique_ptr<int[]>(new int[a.size_]);
+            for(size_t i = 0 ; i < a.size_ ; i++)
+                a.data_[i] = b[i];
     return a;
 }
 string toString(const FlexArray& a)
