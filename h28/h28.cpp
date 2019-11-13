@@ -6,17 +6,70 @@
 #include <string>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 #include "h28.h"
 
 // Implement the Bug class member functions here
 
 
+   Bug::Bug(int startPos)
+   {
+       position_ = startPos;
+   }
+   void Bug::move()
+    {
+        position_ += direction_ ;
+    }
+    void Bug::turn()
+    {
+        direction_ *= -1;
+    }
+    int Bug::position() const
+    {
+        return position_;
+    }
+
 // Implement the Employee class member functions here
+Person::Person()
+{
+    age_ = 0;
+}
+Person::Person(const string& name, int age)
+{
+    name_ = name;
+    age_ = age;
+}
+string Person::name() const
+{
+    return name_;
+}
+int Person::age() const
+{
+    return age_;
+}
 
-
-
+Employee::Employee()
+{
+    salary_ = 0;
+}
+Employee::Employee(const string& name, double salary)
+{
+    Person p = {name , data_.age()};
+    salary_ = salary;
+}
+void Employee::salary(double newSalary)
+{
+    salary_ = newSalary;
+}
+double Employee::salary() const
+{
+    return salary_;
+}
+string Employee::name() const
+{
+    return data_.name();
+}
 //////////////////////// STUDENT TESTING //////////////////////////
 #include <iostream>
 int run()
