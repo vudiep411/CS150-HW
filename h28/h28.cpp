@@ -57,6 +57,7 @@ Employee::Employee()
 Employee::Employee(const string& name, double salary)
 {
     Person p = {name , data_.age()};
+    data_ = p;
     salary_ = salary;
 }
 void Employee::salary(double newSalary)
