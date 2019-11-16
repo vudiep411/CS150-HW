@@ -20,11 +20,6 @@ void reverse(char * s)
     while (*b)
     {
         b++;
-        if (*b == '\0')
-        {
-            b--;
-            break;
-        }
     }
 
     while (a < b)
@@ -39,11 +34,6 @@ void reverse(char * s)
 
 const char * findStr(const char *str1, const char *str2)
 {
-    // if (*str2 == '\0')  return str1;
-    // size_t len = 0;
-    // auto temp = *str1;
-    // while (temp != '\0') {len++; temp++; }
-
    while (*str1)
     {
         auto p = str1;
@@ -56,7 +46,6 @@ const char * findStr(const char *str1, const char *str2)
         }
         if (*p2 == '\0')  return p;
         str1++;
-
     }
     return nullptr;
 }
