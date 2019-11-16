@@ -21,7 +21,7 @@ void reverse(char * s)
     {
         b++;
     }
-
+    b--;
     while (a < b)
     {
         auto temp = *a;
