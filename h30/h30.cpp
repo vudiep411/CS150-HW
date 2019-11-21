@@ -5,15 +5,114 @@
  */
 #include <string>
 #include <stdexcept>
+#include <cmath>
+#include <iostream>
+#include <sstream>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 #include "h30.h"
 
 // Implement your class and operators here
+static int gcd(int x , int y)
+{
+    int r = x % y;
+    while(r != 0)
+    {
+        x = y;
+        y = r;
+        r = x % y;
+    }
+    return y;
+}
+Fraction::Fraction(int n)
+{
+     numerator_ = n;
+}
+Fraction::Fraction(int n, int d)
+{
+    if(d == 0) throw invalid_argument("Error");
+    if(n == 0)  numerator_ = 0;
+    else
+    {
+        int g = gcd(abs(n) , abs(d));
+        numerator_ = n / g;
+        denominator_ = abs(d) / g;
+        if(d < 0) numerator_ *= -1;
+    }
+}
 
+Fraction& Fraction::operator+=(const Fraction& rhs)
+{
+ int a = numerator_;
+ int b = denominator_;
+ int c = rhs.numerator_;
+ int d = rhs.denominator_;
+ *this = Fraction(a * d + c * b , b * d);
+ return *this;
+}
+Fraction& Fraction::operator-=(const Fraction& rhs)
+{
+ int a = numerator_;
+ int b = denominator_;
+ int c = rhs.numerator_;
+ int d = rhs.denominator_;
+ *this = Fraction(a * d - c * b , b * d);
+ return *this;
+}
+Fraction& Fraction::operator*=(const Fraction& rhs)
+{
+ int a = numerator_;
+ int b = denominator_;
+ int c = rhs.numerator_;
+ int d = rhs.denominator_;
+ *this = Fraction(a * c , b * d);
+ return *this;
+}
+Fraction& Fraction::operator/=(const Fraction& rhs)
+{
+ int a = numerator_;
+ int b = denominator_;
+ int c = rhs.numerator_;
+ int d = rhs.denominator_;
+ *this = Fraction(a * d , b * c);
+ return *this;
+}
 
+string Fraction::toString() const
+{
+ ostringstream out;
+ out << numerator_;
+ if(denominator_ != 1) out << "/" + denominator_;
+ return out.str();
+}
+ostream& operator<<(std::ostream& out, const Fraction& f)
+{
+    out << f.toString();
+    return out;
+}
+
+const Fraction operator+(const Fraction& lhs, const Fraction& rhs)
+{
+    Fraction result(lhs);
+    return result += rhs;
+}
+const Fraction operator-(const Fraction& lhs, const Fraction& rhs)
+{
+    Fraction result(lhs);
+    return result -= rhs;
+}
+const Fraction operator*(const Fraction& lhs, const Fraction& rhs)
+{
+     Fraction result(lhs);
+     return result *= rhs;
+}
+const Fraction operator/(const Fraction& lhs, const Fraction& rhs)
+{
+     Fraction result(lhs);
+     return result /= rhs;
+}
 
 
 
