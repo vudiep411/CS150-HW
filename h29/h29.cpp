@@ -24,10 +24,7 @@ Image::Image(const string& path)
 {
    load(path);
 }
-// void info(const string& msg, const Image& img)
-// {
-//     cout << msg << ": size()->" << img.size() << ", witdth()->" << img.width() << ", height()->" << img.height() << endl;
-// }
+
  unsigned Image::width() const{
      return width_;
  }
