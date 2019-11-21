@@ -82,10 +82,11 @@ Fraction& Fraction::operator/=(const Fraction& rhs)
 
 string Fraction::toString() const
 {
- ostringstream out;
- out << numerator_;
- if(denominator_ != 1) out << "/" + denominator_;
- return out.str();
+    string r;
+    if(denominator_ != 1)  r = to_string(numerator_) + "/" + to_string(denominator_);
+    else  r = to_string(numerator_);
+    return r;
+
 }
 ostream& operator<<(std::ostream& out, const Fraction& f)
 {
@@ -120,15 +121,15 @@ const Fraction operator/(const Fraction& lhs, const Fraction& rhs)
 
 int run()
 {
-    cout << "Uncomment these and use make run to test." << endl;
-    // Fraction a(3, 6); // 1/2 after reducing
-    // Fraction b(1, 3); // 1/3
-    // Fraction c(1, 6); // 1/6
+    //cout << "Uncomment these and use make run to test." << endl;
+    Fraction a(3, 6); // 1/2 after reducing
+    Fraction b(1, 3); // 1/3
+    Fraction c(1, 6); // 1/6
 
-    // Fraction sum = a + b + c;
+    Fraction sum = a + b + c;
 
-    // cout << a << " + " << b << " + " << c
-    //     << " = " << sum << endl;
+    cout << a << " + " << b << " + " << c
+        << " = " << sum << endl;
 
     return 0;
 }
