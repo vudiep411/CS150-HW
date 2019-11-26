@@ -9,7 +9,7 @@ using namespace std;
 
 #include "h31.h"
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 // Add your implementation here
 bool find(const string& s, const string& t)
