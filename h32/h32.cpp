@@ -9,7 +9,7 @@ using namespace std;
 
 #include "h32.h"
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 // Add your implementation here
 string stringClean(const string& str)
