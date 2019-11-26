@@ -12,7 +12,14 @@ using namespace std;
 string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
 
 // Add your implementation here
-
+string stringClean(const string& str)
+{
+    if(str.size() < 2)
+		return str;
+	if(str.at(0) == str.at(1))
+		return stringClean(str.substr(1));
+	return str.at(0) + stringClean(str.substr(1));
+}
 
 
 
