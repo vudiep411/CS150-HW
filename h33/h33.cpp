@@ -9,10 +9,15 @@ using namespace std;
 
 #include "h33.h"
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 // Add your implementation here
-
+int subCount(const std::string& str, const std::string& sub)
+{
+    if(str.empty()) return 0;
+    if(str.substr(0 , sub.size()) == sub) return 1 + subCount(str.substr(sub.size()) , sub );
+    return subCount(str.substr(1) , sub);
+}
 
 
 
