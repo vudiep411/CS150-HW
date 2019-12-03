@@ -11,7 +11,7 @@ using namespace std;
 
 #include "h34.h"
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 ///////// Add your code here ///////////////
 Circle::Circle(double x, double y, double r) : Point(y, r) // parameters are mixed up.
