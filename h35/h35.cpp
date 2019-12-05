@@ -12,7 +12,7 @@ using namespace std;
 
 #include "h35.h"
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "vdiep8"; // Add your Canvas/occ-email ID
 
 // Add your implementation here
 Worker::Worker(const std::string& name , double r)
