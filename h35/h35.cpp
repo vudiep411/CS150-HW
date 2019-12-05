@@ -37,7 +37,9 @@ HourlyWorker::HourlyWorker(const std::string& name , double r) : Worker(name , r
 
 std::string HourlyWorker::payInfo(int hour)
 {
-    return "";
+    ostringstream out;
+    out << name_ << "(Salaried, $ " << fixed << setprecision(2) << rate_ << ") worked " <<  hour << " hours. Pay: $ " << fixed << setprecision(2) << 40 * rate_;
+    return out.str();
 }
 /////////////// Student Tests ////////////////////////////
 #include <iostream>
