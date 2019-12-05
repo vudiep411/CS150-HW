@@ -38,9 +38,10 @@ HourlyWorker::HourlyWorker(const std::string& name , double r) : Worker(name , r
 std::string HourlyWorker::payInfo(int hour)
 {
     double pay;
-    if(hour > 40) pay =rate_;
+    if(hour > 40) pay = (40 * hour) + ((hour - 40) * rate_ * 1.5);
+    else pay = hour * rate_;
     ostringstream out;
-    out << name_ << "(Hourly, $ " << fixed << setprecision(2) << rate_ << ") worked " <<  hour << " hours. Pay: $ " << fixed << setprecision(2) << pay * rate_;
+    out << name_ << "(Hourly, $ " << fixed << setprecision(2) << rate_ << ") worked " <<  hour << " hours. Pay: $ " << fixed << setprecision(2) << pay ;
     return out.str();
 }
 /////////////// Student Tests ////////////////////////////
